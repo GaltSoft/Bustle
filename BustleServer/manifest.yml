@@ -1,12 +1,13 @@
 declared-services:
-  TodoList-postgresql:
-    label: compose-for-postgresql
-    plan: Standard
+  TodoListCloudantDatabase:
+    label: cloudantNoSQLDB
+    plan: Lite
 applications:
-- name: TodoListPostgresqlApp
+- name: BlusterCloudantApp
   memory: 256M
   instances: 1
   random-route: true
   command: Server
   services:
-  - TodoList-postgresql
+  - BlusterCloudantDatabase
+

@@ -1,0 +1,8 @@
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+TodoListFull.xcworkspace
+couchdb.stdout
+couchdb.stderr
+/cloud_config.json
