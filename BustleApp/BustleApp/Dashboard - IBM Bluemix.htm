@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0150)https://console.ng.bluemix.net/?direct=classic/#/resources/orgGuid=88ee2fa5-38b9-437b-a1f3-8b8f42225da0&spaceGuid=25d64269-d8db-4c2a-bdca-bb27a6ec0f43 -->
+<html lang="en" class="dj_webkit dj_chrome dj_contentbox"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="google-site-verification" content="U2W3SMOzm0iHCUQ_9X_YVtT5IqYLA8EfmSxusKCKU50"><meta property="og:title" content="IBM Bluemix - Next-Generation Cloud App Development Platform"><meta property="og:image" content="https://www.bluemix.net/lib/cloudOE/resources/dt/imgs/landing/bluemix_logo_multi_181.png"><meta property="og:description" content="Bluemix is an open standards, cloud platform for building, running, and managing apps and services."><meta name="description" content="Bluemix is an open standards, cloud platform for building, running, and managing apps and services."><meta name="keywords" content="Bluemix,cloud,platform,paas,development,ibm"><title id="titleElement">Dashboard - IBM Bluemix</title> <!-- NOTE: Title is set in RuntimeManager --><link rel="icon" type="image/png" href="https://ace-common-production-20160602-164011.ng.bluemix.net/cache/33e-4016485332/imgs/favicon.png"><!-- Optimize build using Zazl:Uncomment these lines and comment out the dojoConfig and dojo.js lines.Then run ACE and notice the modules that are loaded for each pane (forexample). You can then use this data to generate build layers.--><!--<script src="lib/zazl/zazl.js"></script><script src="zazlconfig.js"></script><script> require(['cloudOE/main']); </script>--><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/tacticbindlinks.js"></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/tactic.js"></script><script async="" id="db_ip_api" src="./Dashboard - IBM Bluemix_files/ip.json"></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/ydoy8e4i"></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/analytics.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/6si.min.js" id="utag_1294"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/eluminate.js" id="tealium_cormetrics1243"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/rYm5PMoT.min.js" id="demandbase_js_lib"></script><script src="./Dashboard - IBM Bluemix_files/utag.js" type="text/javascript" async=""></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/ida_production.js"></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/analytics-classic.js"></script><script type="text/javascript" async="" src="./Dashboard - IBM Bluemix_files/analytics.min.js"></script><script type="text/javascript" src="./Dashboard - IBM Bluemix_files/2761520371.js"></script><script>dojoConfig = {baseUrl: '//ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build',packages: [{name: 'dojo',location: './lib/dojo'}, {name: 'dijit',location: './lib/dijit'}, {name: 'dojox',location: './lib/dojox'}, {name: 'cloudOE',location: './lib/cloudOE'}, {name: 'gridx',location: './lib/gridx'}, {name: 'org',location: './lib/cometd/org'}, {name: 'idx',location: './lib/idx'}, {name: 'Sanitize_js',location: './lib/Sanitize_js'}, {name: 'ZeroClipboard',location: './lib/ZeroClipboard'}],paths: {'Long': './lib/protobufjs/Long.min','ByteBuffer': './lib/protobufjs/ByteBufferAB.min','ProtoBuf': './lib/protobufjs/ProtoBuf.min'},async: true,tlmSiblingOfDojo: false,locale: 'en',selectorEngine: 'lite',toolchainEnabled: Boolean("true"),otcV1Enabled: Boolean(""),otcSetupUIHost: '',otcSetupAPIHost: '',otcSetupHost: 'https://new-console.ng.bluemix.net',otcUIHost: ''};</script><meta name="IBM.WTMSite" content="BLUEMIX"><script type="text/javascript">digitalData = {page: {pageInfo: {pageID: "BLUEMIX DASHBOARD"}}}</script><script src="./Dashboard - IBM Bluemix_files/bluemix-analytics.js"></script><!-- The inline script (above) should come before any external resources (below)whether they be JS or CSS, in order to fully allow parallel downloading(as specified by Chrome DevTools Audits). --><link rel="stylesheet" type="text/css" href="./Dashboard - IBM Bluemix_files/cloudOELoader.min.css"><link rel="stylesheet" href="./Dashboard - IBM Bluemix_files/common-header.min.css"><style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style><style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+.notifyjs-hidable {
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style><script type="text/javascript" src="./Dashboard - IBM Bluemix_files/socket-event-channel.min.js" id="dojo_request_script0" async="" charset="utf-8"></script><script type="text/javascript" src="./Dashboard - IBM Bluemix_files/saved_resource"></script><script type="text/javascript" src="./Dashboard - IBM Bluemix_files/ip(1).json"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.3222.js" id="utag_ibm.main_3222"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1243.js" id="utag_ibm.main_1243"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.712.js" id="utag_ibm.main_712"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.721.js" id="utag_ibm.main_721"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.804.js" id="utag_ibm.main_804"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1174.js" id="utag_ibm.main_1174"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1278.js" id="utag_ibm.main_1278"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1294.js" id="utag_ibm.main_1294"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1175.js" id="utag_ibm.main_1175"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1893.js" id="utag_ibm.main_1893"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.1925.js" id="utag_ibm.main_1925"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/utag.3402.js" id="utag_ibm.main_3402"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/conversion_async.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/conversion_async.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/oct.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/oct.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/insight.min.js"></script><script language="javascript" type="text/javascript" src="./Dashboard - IBM Bluemix_files/50200000.js"></script><script type="text/javascript" async="" charset="utf-8" src="./Dashboard - IBM Bluemix_files/015549ed134d0002ea72639a81a905078002e07000838" id="tealium_visitor_service_1175main"></script><script language="javascript" type="text/javascript" src="./Dashboard - IBM Bluemix_files/rules_50200000.js"></script><script language="javascript" type="text/javascript" src="./Dashboard - IBM Bluemix_files/dispatcher-v3.js"></script><script src="./Dashboard - IBM Bluemix_files/yahoo-min.js" type="text/javascript"></script><script src="./Dashboard - IBM Bluemix_files/cp-v3.js" type="text/javascript"></script><script src="./Dashboard - IBM Bluemix_files/json-min.js" type="text/javascript"></script><script type="text/javascript" src="./Dashboard - IBM Bluemix_files/cfLogView.min.js"></script></head><body class="oneui cloudOE ace_pricingEnabled ace_loggedIn hasRegion ace_freeTrialEnabled"><div id="unsupportedMessage" class="no-show"></div><div id="bodyWrapper"><div data-dojo-attach-point="focusNode" data-dojo-type="cloudOE/panes/Banner" id="cloudOEBanner" class="cloudOEBanner authenticated is-ActionBarBelow" lang="en" widgetid="cloudOEBanner"><script>var videodesk_uid = {"notLoggedIn": "","loggedIn": ""}</script><header class="bluemix-global-header no-touch" style="z-index: 99"><div class="bluemix-masthead"><a href="https://console.ng.bluemix.net/" class="bluemix-home-link bluemix-logo icon-logo-grey"></a><div class="bluemix-nav-menu-button icon-bluemix-nav-menu" tabindex="1" id="header-menu"></div><a href="https://console.ng.bluemix.net/" class="bluemix-branding">IBM <span class="bluemix-product-title">Bluemix</span></a><div id="alternateConsoleHost" class="alternate-console"><span>Ready? </span><a href="https://new-console.ng.bluemix.net/">Try the new Bluemix</a></div><div class="alternate-console-sep">|</div><div id="whiskLink" class="alternate-console whisk-link"><span>New! </span><a href="https://new-console.ng.bluemix.net/openwhisk/">Try OpenWhisk</a></div></div><nav class="bluemix-nav-authorized" data-url="/api/v3/account-status"><ul class="bluemix-nav-list"><li class="freeTrialCounter"><div class="separator"></div><span class="freeTrialButtonText tooltip widget tooltip-arrow-n freeTrialGray">395</span><div class="freeTrialPane hide" tabindex="0"><div id="free-trial-container" daysleftintrialdisplay="20,15,10,5,2,1,0"><ul><li class="disabled"><div class="message single hide">You have 1 day left in your Bluemix test drive.</div><div class="message plural">You have 396 days left in your Bluemix test drive.</div><hr><div class="message">Keep your account going by adding your credit card.</div><div class="message sub-message">Don't worry. We won't charge you unless you go over your free monthly allowance. <a href="https://console.ng.bluemix.net/pricing">Learn more</a></div><div class="upgrade-link"><a class="upgrade-link upgrade-button" href="https://console.ng.bluemix.net/?direct=classic/#/upgradeAccount">Add Credit Card</a><div class="sub-message">Or apply your <a href="https://console.ng.bluemix.net/?direct=classic/#/userAccount/selected_nav=nav_account">promo code</a>.</div></div></li></ul></div></div></li><li class="profileSetting"><div class="separator"></div><span class="tooltip widget tooltip-arrow-n"><img class="icon-i-avatar-icon support-widget-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="profile"><span class="tooltip-content">Account and Support</span></span><div class="bluemix-support"><script class="support-client-strings" type="text/template">{"no_results": "No results found.","related_articles": "Related Articles","docs": "Bluemix Docs","stackoverflow": "Stack Overflow","views": "Views:","score": "Score:","answers": "Answers:","view_more_stackoverflow": "More on Stack Overflow","view_more_docs": "More on Bluemix Docs","not_applicable_other": "Not applicable, or other","not_applicable": "Not applicable","other": "Other","pick_app": "Choose an app with the problem.","runtime_based": "Runtime-based","container_based": "Container-based","vm_based": "VM-based","pick_service": "Choose a service with the problem.","close": "Close","open_feature": "Open Feature","loading": "Loading...","submitting": " Submitting.... Your request might take a while, depending on file size.","error_search": "Your search was not completed because of a problem. Try again later.","error_missing_subject": "Enter a subject.","error_missing_desc": "Enter a description.","error_missing_refibmid": "Enter an IBM ID.","error_missing_app": "Choose an app.","error_missing_service": "Choose a service.","error_exceeding_file_count": "Only ten files can be selected. Try again.","error_exceeding_file_size": "The attachments exceed the limit of 25 MB. Try again.","error_invalid_email": "Enter a valid email address.","error_exceeding_cc_email": "Only five additional email addresses can be included.","error_ticket_submit": "Your request was not submitted because of a problem. Try again later."}</script><script>window.aceProxyUrl = "https://console.ng.bluemix.net";</script><div class="ticket-submission-overlay" style="display: none;"></div><div class="sidebar" id="sidebar"><!-- Sidebar Header --><div class="main-header"><img id="sidebar-profile" class="icon-avatar-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="profile"><img class="icon-support-icon-close close-sidebar" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="close"><img class="icon-support-icon-back back-sidebar" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="back"><div class="user-details"><p class="username display-name-email-ellipsised"><span class="username-given-name" style="display: inline;">Aaron</span>&nbsp;<span class="username-family-name" style="display: inline;">Liberatore</span></p><p class="user-email display-name-email-ellipsised">aliberat@us.ibm.com</p><ul class="user-account"><li><a class="account-link hide-if-expired" href="https://console.ng.bluemix.net/?direct=classic/#/userAccount/selected_nav=nav_usage&amp;cloudOEPaneId=userAccount" tabindex="0">Account</a><span class="verticalSeparator hide-if-expired">&nbsp;|&nbsp;</span></li><li><a class="status-link hide-if-expired" href="https://console.ng.bluemix.net/status" tabindex="0" target="_blank">Status</a><span class="verticalSeparator hide-if-expired">&nbsp;|&nbsp;</span></li><!-- Support link in monolith --><!-- Logout --><li><a class="logout-link support-widget">Log Out</a></li></ul></div></div><!-- Main Screen of Sidebar --><div class="page-sidebar-main"><!-- Region & Org Selection --><div class="select-area"><!-- Region Selection --><div class="user-select select-region"><p class="select-title">Region</p><p class="select-name current-region" data-name="us-south">US South</p><p class="select-name other-region name-hidden" data-name="au-syd" target-url="https://console.au-syd.bluemix.net/?%2F=">Sydney</p><p class="select-name other-region name-hidden" data-name="eu-gb" target-url="https://console.eu-gb.bluemix.net/?%2F=">United Kingdom</p><img class="icon-support-chevron chevron toggle-region-expand" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="expand"></div><!-- Org Selection --><div class="user-select select-org"><p class="select-title">Organization</p><p class="select-name current-org" data-guid="88ee2fa5-38b9-437b-a1f3-8b8f42225da0">IBM-Swift-Apps</p><img class="icon-support-chevron chevron toggle-org-expand current-org-toggle" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="expand"></div><!-- manage org --><div class="select-area-links manage-org-link"><a href="https://console.ng.bluemix.net/?direct=classic/#/manage/type=org&amp;tabId=users">Manage Organizations</a></div></div><!-- Notifications Section --><div class="main-notifications-container"><p class="main-section-title">Notifications</p><div class="notifications-entries"><div class="notification notification-card card-green" data-guid="17ce0b53-b975-413d-8f64-b25645467353"><p class="notification-title">todolist</p><p class="notification-message"><div class="notification-msg-item">updated <span>todolist</span> app</div><div class="notification-msg-item">instances to <span>1</span></div><div class="notification-msg-item">memory to <span>512 MB</span></div><div class="notification-msg-item">disk quota to <span>1024 MB</span></div><div class="notification-msg-item">modified environment</div></p><p class="notification-time">6/13/2016 4:03:10 PM</p><div class="close-card">	<div class="icon-support-icon-close"></div></div></div><p class="notification main-section-no-notification " style="display: none;">You have no new notifications</p></div></div> <!-- End of Notifications --><!-- Support Section --><div class="main-support"><p class="main-section-title">Support</p><!-- Get Help  --><div class="support-card card-get-help"><img class="icon-support-icon-question" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="get help"><p class="support-title">Get help</p><p class="support-detail">Get help on anything from technical support to sales inquiries.</p></div><!-- Submit An Idea  --><div class="support-card card-submit-idea"><img class="icon-support-icon-idea" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="submit an idea"><p class="support-title">Submit an Idea</p><p class="support-detail">Help us help you. Submit ideas for improvements to Bluemix!</p></div></div> <!-- End of Support Section --></div> <!-- End of Main Sidebar Screen --><!-- StackOverflow/ Docs Search --><div class="page-help-container"><div class="help-search-container"><p class="main-section-title">Get help</p><p class="help-details">Explore existing support articles.</p><div class="input-container"><img class="icon-support-icon-search search-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="search"><input class="help-search" type="text" placeholder="Type to search"></div><p class="help-details search-message-text">Get answers now. Search our documentation and posts from the Stack Overflow community (which we actively monitor).</p><p class="article-list"></p><button class="btn-post-question">Post to Stack Overflow</button><div class="view-more-container"></div></div><div class="help-container-footer"><p class="main-section-title title-centered">Still having trouble?</p><button class="btn-submit-ticket">Get in Touch</button></div></div> <!-- End of StackOverflow Docs Search --><!-- Ticket Selection --><div class="page-ticket-selection ticket-selection"><ul class="ticket-categories"><p class="main-section-title">I want to contact:</p><a href="mailto:sales@bluemix.net?Subject=I%20have%20a%20question%20about%20Bluemix" target="_top"><li>Sales</li></a><p class="main-section-title">I need technical support for:</p><li class="ticket-app">My app</li><li class="ticket-service">A service</li><li class="ticket-technical">Something else</li><p class="main-section-title">I need help with:</p><li class="ticket-account">My account or logging in</li><li class="ticket-billing">Billing</li></ul><div class="view-more-links"><a href="https://support.ibmcloud.com/ics/support/mylogin.asp?login=bluemix" target="_blank">Manage Tickets</a></div></div> <!-- End of Ticket Selection --><!-- Ticket Form --><div class="page-ticket-container ticket-container"><input type="hidden" name="ibmid" value="aliberat@us.ibm.com"><div class="ticket-select"><p class="ticket-information">Region</p><p class="region-name ticket-fields-region-text">US South</p><select class="ticket-fields-region-dropdown" name="region"><option value="ibm:yp:us-south" selected="">US South</option><option value="ibm:yp:au-syd">Sydney</option><option value="ibm:yp:eu-gb">United Kingdom</option></select></div><!-- org-picker class needed for header.js to get data-url when old picker is disabled --><div class="ticket-select ticket-fields-space-org"><p class="ticket-information">Bluemix organization</p><select class="ticket-info-org org-picker option-has-guid" name="org" data-url="/api/v3/selected-org"><option value="Not applicable, or other">Not applicable, or other</option><option value="88ee2fa5-38b9-437b-a1f3-8b8f42225da0" selected="">IBM-Swift-Apps</option></select></div><div class="ticket-select ticket-fields-space-org"><p class="ticket-information">Bluemix space</p><select class="ticket-info-space option-has-guid" name="space" data-url="/api/v3/space-summary"><option value="Not applicable, or other">Not applicable, or other</option><option value="25d64269-d8db-4c2a-bdca-bb27a6ec0f43" selected="">dev</option></select></div><div class="ticket-fields-ibmid"><p class="ticket-information">IBM ID</p><input class="ticket-info-refibmid" type="text" name="refibmid" value="aliberat@us.ibm.com"></div><div class="ticket-fields-invoice"><p class="ticket-information">Invoice number</p><input class="ticket-info-invoice" type="text" name="invoice" placeholder="(optional)"></div><div class="ticket-select ticket-fields-app"><p class="ticket-information">Which app experienced an error?*</p><select class="ticket-info-app option-has-guid" name="app"><option value="" disabled="" selected="">Choose an app with the problem.</option><option value="Not applicable, or other">Not applicable, or other</option><option value="" disabled="">Runtime-based</option><option value="b819af0b-fbe7-47bb-ab5f-7c0ef42c516b">K-TodoList</option><option value="24ed6764-f76f-4e18-9cbb-8295032622eb">todolist</option></select></div><div class="ticket-select ticket-fields-service"><p class="ticket-information">Which service experienced an error?*</p><select class="ticket-info-service option-has-guid" name="service"><option value="" disabled="" selected="">Choose a service with the problem.</option><option value="Not applicable, or other">Not applicable, or other</option><option value="ac8b738e-9103-462f-9c7a-3171494d88b4">TodoList-Cloudant</option><option value="c2d5f5f5-4589-4b00-9bda-62fd749b1dd2">TodoList-Mobile-Clien-Access</option><option value="15415018-2369-4cf3-a7a1-aeb307e5b9e2">TodoList-Object-Storage</option></select></div><div class="ticket-border"></div><p class="ticket-information">Subject*</p><input class="ticket-info-subject" type="text" maxlength="140" name="summary" placeholder="What&#39;s this about?"><p class="ticket-information">Brief description*</p><textarea class="ticket-info-desc" rows="4" maxlength="60000" name="description" placeholder="What&#39;s going on?"></textarea><!-- file upload --><p class="ticket-information">Include an attachment<br><span>(Up to 10 files and 25 MB total)</span></p><div class="image-upload"><label for="file-input" class="attachment-button"><img class="icon-support-icon-upload upload-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="upload">&nbsp;Choose a file.</label><input id="file-input" type="file" multiple=""></div><div class="selected-files"></div><!-- cc email --><div class="clearfix"></div><p class="ticket-information">Include another email address</p><div class="input-container"><img class="icon-support-icon-check add-email-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="add email"><input class="add-email-field" type="text" placeholder="user@domain"></div><div class="selected-emails"></div><div class="ticket-error-message"></div><div class="ticket-submit-container"><button class="submit-cancel cancel-button">Cancel</button><button class="submit-cancel next-button">Next</button><button class="submit-cancel submit-button">Submit</button></div></div> <!-- End of Ticket Form for App Selection  --><!-- Severity Selection --><div class="page-severity">			<div class="severity-selection"><div class="severity-choice-selection severity-info sev-has-support"><p class="severity-title">Your ticket will be submitted with a low severity.</p><br><p class="urgency-title">Is your request more urgent?</p><p class="sev-sections-paid">Change the severity and submit.</p><p class="upgrade-support-1 sev-sections-nonpaid">To submit high-severity (level 1, 2, and 3) tickets, upgrade to <a class="standard-support-url" target="_blank" href="https://console.ng.bluemix.net/?direct=classic/#/pricing/cloudOEPaneId=pricing&amp;paneId=pricingSheet&amp;orgGuid=88ee2fa5-38b9-437b-a1f3-8b8f42225da0&amp;spaceGuid=25d64269-d8db-4c2a-bdca-bb27a6ec0f43">Standard Support</a> by contacting <a href="mailto:sales@bluemix.net?subject=I%27d%20like%20to%20purchase%20standard%20support&amp;body=So%20that%20you%20can%20get%20me%20a%20quote%20for%20standard%20Bluemix%20support%2C%20here%27s%20some%20of%20my%20info%3A%0A%0ABilling%20Address%3A%0AShipping%20Address%20(if%20different)%3A%0AContact%20Phone%3A%0AEmail%20associated%20to%20my%20IBM%20ID%3A" target="_top">sales@bluemix.net</a></p></div><div class="high-low"><p class="highest">Lowest</p><div class="lowest">Highest</div></div><div class="severity-border border-full"></div><div class="clearfix"></div><!-- Select Your Severity Level --><div class="severity-choice-selection sev-has-support"><div class="severity-choice"><div class="severity-circle circle-4 severity-circle-selected"></div><p>4</p></div><div class="severity-choice sev-sections-paid"><div class="severity-circle circle-3"></div><p>3</p></div><div class="severity-choice sev-sections-paid"><div class="severity-circle circle-2"></div><p>2</p></div><div class="severity-choice sev-sections-paid"><div class="severity-circle circle-1"></div><p>1</p></div><div class="upgrade-support-2 sev-sections-nonpaid">Upgrade to <a class="standard-support-url" target="_blank" href="https://console.ng.bluemix.net/?direct=classic/#/pricing/cloudOEPaneId=pricing&amp;paneId=pricingSheet&amp;orgGuid=88ee2fa5-38b9-437b-a1f3-8b8f42225da0&amp;spaceGuid=25d64269-d8db-4c2a-bdca-bb27a6ec0f43">Standard Support</a> to set a higher severity.</div></div><!-- Severity Level 1 Description --><div class="severity-explanation sev-1"><div class="ticket-information">Severity Level 1 (Highest)<img class="icon-support-icon-info support-info-icon sev-info-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="information"></div><div class="severity-info">·&nbsp;Initial response time objective: 1 business hour</div><div class="severity-info office-hours">24x7 Monday to Sunday</div><div class="severity-info">·&nbsp;Application not accessible by your clients</div><div class="severity-info">·&nbsp;Data corruption</div><br><p class="severity-info">You must be continuously available to work with Bluemix Support to maintain this level of response. If you are not able to respond within 1 hour, Support reserves the right to reduce the severity.</p></div> <!-- Severity Level 2 Description --><div class="severity-explanation sev-2"><div class="ticket-information">Severity Level 2<img class="icon-support-icon-info support-info-icon sev-info-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="information"></div><div class="severity-info">·&nbsp;Initial response time objective: 2 business hours</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;Application errors affecting multiple users</div><div class="severity-info">·&nbsp;Login problems for individual users</div></div><!-- Severity Level 3 Description --><div class="severity-explanation sev-3"><div class="ticket-information">Severity Level 3<img class="icon-support-icon-info support-info-icon sev-info-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="information"></div><div class="severity-info">·&nbsp;Initial response time objective: 4 business hours</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;General issues</div><div class="severity-info">·&nbsp;Application errors or problems affecting individual users</div></div><!-- Severity Level 4 Description --><div class="severity-explanation sev-4"><div class="ticket-information">Severity Level 4 (Lowest)<img class="icon-support-icon-info support-info-icon sev-info-icon" src="./Dashboard - IBM Bluemix_files/blank.gif" alt="information"></div><div class="severity-info">·&nbsp;Initial response time objective: 1 Business Day</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;Minor application issues</div><div class="severity-info">·&nbsp;How-to questions</div><div class="severity-info">·&nbsp;Requests for enhancements</div></div><div class="ticket-error-message"></div><!-- Submit or Cancel --><div class="ticket-submit-container"><button class="submit-cancel cancel-button">Cancel</button><button class="submit-cancel submit-button" backend-url="https://supportsite-ticketapi.ng.bluemix.net/api/v1/email">Submit</button></div></div> <!-- End of Severity Selection --></div> <!-- End of Severity --><!-- Severity Help --><div class="page-severity-help"><!-- Help: overview --><div class="severity-explanation severity-help"><div class="severity-info">​Only trial users and accounts with an active support subscription can create high-severity tickets.</div><br><div class="ticket-information">Do you want to add Support?</div><div class="severity-info">To submit high-severity (level 1, 2, and 3) tickets, upgrade to <a class="standard-support-url" target="_blank" href="https://console.ng.bluemix.net/?direct=classic/#/pricing/cloudOEPaneId=pricing&amp;paneId=pricingSheet&amp;orgGuid=88ee2fa5-38b9-437b-a1f3-8b8f42225da0&amp;spaceGuid=25d64269-d8db-4c2a-bdca-bb27a6ec0f43">Standard Support</a> by contacting <a href="mailto:sales@bluemix.net?subject=I%27d%20like%20to%20purchase%20standard%20support&amp;body=So%20that%20you%20can%20get%20me%20a%20quote%20for%20standard%20Bluemix%20support%2C%20here%27s%20some%20of%20my%20info%3A%0A%0ABilling%20Address%3A%0AShipping%20Address%20(if%20different)%3A%0AContact%20Phone%3A%0AEmail%20associated%20to%20my%20IBM%20ID%3A" target="_top">sales@bluemix.net</a></div></div><!-- Help: Severity Level 1 --><div class="severity-explanation severity-help"><p class="ticket-information">Severity Level 1 (Highest)</p><div class="severity-info">·&nbsp;Initial response time objective: 1 business hour</div><div class="severity-info office-hours">24x7 Monday to Sunday</div><div class="severity-info">·&nbsp;Application not accessible by your clients</div><div class="severity-info">·&nbsp;Data corruption</div><br><p class="severity-info">You must be continuously available to work with Bluemix Support to maintain this level of response. If you are not able to respond within 1 hour, Support reserves the right to reduce the severity.</p></div> <!-- Help: Severity Level 2 --><div class="severity-explanation severity-help"><p class="ticket-information">Severity Level 2</p><div class="severity-info">·&nbsp;Initial response time objective: 2 business hours</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;Application errors affecting multiple users</div><div class="severity-info">·&nbsp;Login problems for individual users</div></div><!-- Help: Severity Level 3 --><div class="severity-explanation severity-help"><p class="ticket-information">Severity Level 3</p><div class="severity-info">·&nbsp;Initial response time objective: 4 business hours</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;General issues</div><div class="severity-info">·&nbsp;Application errors or problems affecting individual users</div></div><!-- Help: Severity Level 4 --><div class="severity-explanation severity-help"><div class="ticket-information">Severity Level 4 (Lowest)</div><div class="severity-info">·&nbsp;Initial response time objective: 1 Business Day</div><div class="severity-info office-hours">Sunday 10:00 PM GMT – Saturday 12:00 AM GMT</div><div class="severity-info">·&nbsp;Minor application issues</div><div class="severity-info">·&nbsp;How-to questions</div><div class="severity-info">·&nbsp;Requests for enhancements</div></div></div> <!-- End of Severity Help --><!-- Ticket Submission Confirmation --><div class="page-ticket-confirmation"><div class="ticket-confirmation-text"><p>Thank you!</p><span>We'll be in touch by email soon.</span></div><div class="ticket-submit-container"><button class="submit-cancel done-button">Done</button></div></div> <!-- End of Ticket Submission Confirmation -->	</div> <!-- End of sidebar --></div> <!-- End of bluemix-support --></li></ul></nav><nav class="bluemix-nav-unauthorized"><ul class="bluemix-nav-list"><li id="dashboard" class="hide-if-expired is-selected"><span><a class="bluemix-nav-list-link" href="https://console.ng.bluemix.net/?direct=classic/#/resources">Dashboard</a></span></li><li id="solutions" class="hide-if-expired"><span><a class="bluemix-nav-list-link" href="http://www.ibm.com/cloud-computing/bluemix/solutions/" target="_blank">Solutions</a></span></li><li id="catalog" class="hide-if-expired"><span><a class="bluemix-nav-list-link" href="https://console.ng.bluemix.net/catalog">Catalog</a></span></li><li id="pricing" class="hide-if-expired"><span><a class="bluemix-nav-list-link" href="https://console.ng.bluemix.net/pricing">Pricing</a></span></li><li id="docs" class="hide-if-expired"><span><a class="bluemix-nav-list-link" href="https://console.ng.bluemix.net/docs" target="_blank">Docs</a></span></li><li id="community" class="hide-if-expired"><span><a class="bluemix-nav-list-link" href="https://developer.ibm.com/bluemix/" target="_blank">Community</a></span></li><li id="terms" class="is-selected"><span><a class="bluemix-nav-list-link" href="https://console.ng.bluemix.net/javascript;;">Terms</a></span></li></ul></nav><div class="logoutDialog dialogModal"><div class="dialogContainer hide" role="dialog" aria-labelledby="logoutDialog_title"><div class="dialogTitleBar"><span class="dialogTitle"><div class="dialogMessageArea"><table><tbody><tr><td id="iconCell"><div class="icon-warning-orange-small"></div></td><td class="dialogMessageAreaTextCell"><span class="dialogMessageAreaText">Confirm</span></td></tr></tbody></table></div></span><div class="dialogCloseIcon" title="Close" role="button" tabindex="0">×</div></div><div class="dialogPaneContent"><div class="dialogContentArea"><div class="dialogMessageContentAreaContentDiv"><div class="messageArea">You are logged in to IBM Bluemix with your IBM ID. Logging out of Bluemix signs you out of other IBM applications that you might have open in other browser windows. Do you want to log out?</div></div><div class="dialogPaneActionBar"><a href="https://console.ng.bluemix.net/logout" class="btn btn-primary logout-button">Log Out</a><a class="btn btn-secondary">Cancel</a></div></div></div></div></div></header><script>(function bmCookieManager() {var bmCookies = {createCookie: function createCookie(name,value,days) {if (days) {var date = new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires = "; expires="+date.toGMTString();}else var expires = "";document.cookie = name+"="+value+expires+"; path=/; domain=.bluemix.net";},readCookie: function readCookie(name) {var nameEQ = name + "=";var ca = document.cookie.split(';');for(var i=0;i < ca.length;i++) {var c = ca[i];while (c.charAt(0)==' ') c = c.substring(1,c.length);if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);}return null;}};var envMap = {'sydney': {'prod': {'classic': 'https://console.au-syd.bluemix.net','new': 'https://new-console.au-syd.bluemix.net',}},'london': {'prod': {'classic': 'https://console.eu-gb.bluemix.net','new': 'https://new-console.eu-gb.bluemix.net',},'stage': {'classic': 'https://console.stage1.eu-gb.bluemix.net','new': 'https://new-console.stage1.eu-gb.bluemix.net',},'ondeckstage': {'classic': 'https://console-ondeck.stage1.eu-gb.bluemix.net','new': 'https://new-console-ondeck.stage1.eu-gb.bluemix.net',},'ondeckprod': {'classic': 'https://console-ondeck.eu-gb.bluemix.net','new': 'https://new-console-ondeck.eu-gb.bluemix.net',}},'dallas': {'prod': {'classic': 'https://console.ng.bluemix.net','new': 'https://new-console.ng.bluemix.net',},'stage': {'classic': 'https://console.stage1.ng.bluemix.net','new': 'https://new-console.stage1.ng.bluemix.net',},'ondeckstage': {'classic': 'https://console-ondeck.stage1.ng.bluemix.net','new': 'https://new-console-ondeck.stage1.ng.bluemix.net',},'ondeckprod': {'classic': 'https://console-ondeck.ng.bluemix.net','new': 'https://new-console-ondeck.ng.bluemix.net',}}};var currentEnv = (function envCheck() {var origin = window.location.origin;var finalObj;Object.keys(envMap).forEach(function (location) {var envArray = Object.keys(envMap[location]);envArray.forEach(function(env) {var originObj = envMap[location][env];if (origin === originObj.new || origin === originObj.classic) {finalObj = {new: originObj.new,classic: originObj.classic,current: origin,};}});});return finalObj;})();var redirect = function (env, currentEnv, nonExemptPaths) {var locationAppendages = window.location.pathname + window.location.search + window.location.hash;var addAppendages = true;var location = (env === currentEnv.new) ? currentEnv.new : currentEnv.classic;nonExemptPaths.forEach(function (item) {if (window.location.pathname.indexOf(item) !== -1) {addAppendages = false;}});window.location = (addAppendages) ? location + locationAppendages : location;};var bmCookieName = 'bm_newexperience';var cookienew = bmCookies.readCookie(bmCookieName);var classicLink = document.querySelector('.alternate-console a');var newLink = document.querySelector('.global-links .parallel-release');var nonExemptPaths = ['/dashboard'];if (currentEnv) {if (currentEnv.current === currentEnv.classic) {if (cookienew === 'new') {redirect(currentEnv.new, currentEnv, nonExemptPaths);}classicLink.addEventListener('click', function(e) {e.preventDefault();bmCookies.createCookie(bmCookieName, 'new', 180);redirect(currentEnv.new, currentEnv, nonExemptPaths);});}if (currentEnv.current === currentEnv.new) {newLink.addEventListener('click', function(e) {e.preventDefault();bmCookies.createCookie(bmCookieName, 'classic', 180);redirect(currentEnv.classic, currentEnv, nonExemptPaths);});}}})();</script></div><div class="l-body"><div data-dojo-type="dijit/layout/StackContainer" id="cloudOEMainStackContainer" data-dojo-props="gutters:false,doLayout:false" class="dijitStackContainer dijitContainer dijitLayoutContainer cloudOEMainStackContainer" lang="en" widgetid="cloudOEMainStackContainer"><div role="tabpanel" class="dijitStackContainerChildWrapper dijitVisible"><div class="dijitContentPane dijitStackContainer-child dijitStackContainer-dijitContentPane dijitContentPaneSingleChild" id="dijit_layout_ContentPane_0" widgetid="dijit_layout_ContentPane_0" title="" style="width: 100%; height: 100%; overflow: visible;"><div class="cloudOENavigator cloudOENavigatorSingleChild" data-dojo-attach-point="focusNode" id="uniqName_24_0" widgetid="uniqName_24_0" style="width: 1242px; height: 0px;">
+    <div class="cloudOEPaneHeader" data-dojo-attach-point="titleSpan" style="display: none">Dashboard</div> 
+    <div data-dojo-type="dijit/layout/StackContainer" data-dojo-attach-point="paneStackContainer" data-dojo-props="doLayout:false" style="overflow: visible; width: 1242px; height: 0px;" class="dijitStackContainer dijitContainer dijitLayoutContainer" id="dijit_layout_StackContainer_0" widgetid="dijit_layout_StackContainer_0">   
+	<div role="tabpanel" class="dijitStackContainerChildWrapper dijitHidden"><div class="dijitContentPane cloudOENavigatorWrapperPane dijitStackContainer-child dijitStackContainer-dijitContentPane dijitContentPaneSingleChild" id="dijit_layout_ContentPane_1" widgetid="dijit_layout_ContentPane_1" title=""><div class="cloudOEPublishAppService sampleAppPaneDiv" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_0" widgetid="dijit__WidgetsInTemplateMixin_0" style="overflow: visible; width: 1242px; height: 200px;">
+
+</div></div></div><div role="tabpanel" class="dijitStackContainerChildWrapper dijitVisible" aria-label="Dashboard"><div class="dijitContentPane cloudOENavigatorWrapperPane dijitStackContainer-child dijitStackContainer-dijitContentPane dijitContentPaneSingleChild" id="dijit_layout_ContentPane_3" widgetid="dijit_layout_ContentPane_3" title=""><div data-dojo-attach-point="focusNode" class="cloudOEMyResources" id="uniqName_13_2" widgetid="uniqName_13_2" style="overflow: visible; width: 1242px; height: 0px;">
+	<!-- Action Bar -->
+	<header class="cloudOEActionBar cloudOEDockedOpenNav" data-dojo-attach-point="actionBar">
+	
+		<!-- DockedActionBarSelector -->
+		<div class="cloudOEDockedActionBar" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_6" widgetid="dijit__WidgetsInTemplateMixin_6">
+	<div class="cloudOEActionBarDockedNavArea hasOrgSelector" data-dojo-attach-point="dockedNavArea"> 
+	
+		<nav class="contextual-nav cloudOEActionBarSelector opened" data-dojo-attach-point="dockedNavAreaHeader" id="dockedNavAreaHeader">	
+					
+			<!-- Main twisty area -->
+			<div class="inner resource">
+				<div class="space-selection cloudOESpaceLabel" data-dojo-attach-point="dockedNavAreaLabelArea">
+					<div class="backToContainer" data-dojo-attach-point="backToContainer">
+						<!-- Back button -->
+						<div class="cloudOESpaceBackButton" data-dojo-attach-point="spaceBackButton">
+							<img class="i-back-arrow" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="spaceBackButtonImg">
+							<img class="i-back-arrow-hover" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="spaceBackButtonImgHover">
+						</div>
+						<div class="cloudOESpaceName" data-dojo-attach-point="dockedNavAreaLabelName">Back to Dashboard</div>
+						<div class="orgSelector cloudOEOrgSelector" id="dijit__WidgetsInTemplateMixin_7" widgetid="dijit__WidgetsInTemplateMixin_7">
+	<nav class="contextual-nav cloudOEActionBarSelector cloudOEActionBarSpaceSelector cloudOEOrgSelectorHeader" data-dojo-attach-point="orgSelectorHeader">
+			<div class="inner space">
+				<!-- Space Selector. Add tab index to allow us to take focus. -->
+				<div class="org-selection cloudOESpaceLabel june15Style" data-dojo-attach-point="orgLabel" tabindex="0">
+					<div class="orgSelectorIcon i-nav-org" data-dojo-attach-point="orgSelectorIcon" id="dijit__WidgetsInTemplateMixin_7_orgSelectorIcon"></div>
+					<div class="cloudOESpaceNameTitle cloudOETextWithEllipsis">
+						<span class="cloudOESpaceNameLabel">Org:</span>
+						<span class="cloudOESpaceNameText" data-dojo-attach-point="orgName">IBM-Swift-Apps</span>
+					</div>
+					<div class="separator"></div>
+					<div class="settings-menu cloudOEHide org-list" tabindex="0" style="outline: none;" id="uniqName_0_3" widgetid="uniqName_0_3">
+	<div data-dojo-attach-point="containerNode"><ul><li data-cloudoe-idx="0" class="disabled header">Change organization</li><li data-cloudoe-idx="1" class="selected">IBM-Swift-Apps</li></ul><ul><li data-cloudoe-idx="3" class="manageBtn">Manage Organizations</li></ul></div>
+</div>
+				</div>
+			</div>
+	</nav>
+</div>
+						<div class="DockedActionBar-fallbackTitle cloudOESpaceNameTitle" data-dojo-attach-point="fallbackNode"></div>
+					</div>
+					<div class="separator"></div>
+					<div class="arrowIconDiv" data-dojo-attach-point="arrowIconDiv">
+						<div class="i-arrow-double opened" data-dojo-attach-point="dockedNavAreaExpander"></div>
+						<div class="i-arrow-double-hover opened" data-dojo-attach-point="dockedNavAreaExpanderHover"></div>
+					</div>
+				</div>
+	
+			</div>
+		</nav>
+		
+		<!-- Leave a place for creator to stick custom stuff -->
+		<div data-dojo-attach-point="containerNode" class="cloudOEActionBarDockedNavAreaContainerNode" style="height: 537px;"> 
+
+			<!-- Add a space button -->
+			<div class="manageBtn addSpaceBtn cloudOEBoldFont showAddSpaceBtn" data-dojo-attach-point="addSpaceButton" data-dojo-attach-event="onClick:_onAddSpace">
+				<img src="./Dashboard - IBM Bluemix_files/blank(1).gif" class="i-plus-grey-small" data-dojo-attach-point="connectPlus">
+				Create a Space
+			</div>
+
+			<!-- NavigationTree -->
+			<nav class="NavTree2 isCollapsible contextual-nav" id="dijit__WidgetBase_0" widgetid="dijit__WidgetBase_0"><ul class="NavTree2-level1"><li class="NavTree2-item isSelected isOpened" id="uniqName_13_225d64269-d8db-4c2a-bdca-bb27a6ec0f43" data-ace-props="{&quot;spaceId&quot;:&quot;25d64269-d8db-4c2a-bdca-bb27a6ec0f43&quot;}">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">dev</span>
+		<span class="NavTree2-arrow i-arrow-small-teal-down"></span>
+	</div>
+<ul class="NavTree2-level2" style="height: auto;"><li class="NavTree2-item subNavHeader" id="25d64269-d8db-4c2a-bdca-bb27a6ec0f43_nav_apps">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis"><div class="icon i-nav-apps-grey-16"></div><span class="title">CF Apps (2)</span></span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+<ul class="NavTree2-level3"><li class="NavTree2-item subNavContent NavTree2-leaf" id="uniqName_13_2b819af0b-fbe7-47bb-ab5f-7c0ef42c516b">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">K-TodoList</span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li><li class="NavTree2-item subNavContent NavTree2-leaf" id="uniqName_13_224ed6764-f76f-4e18-9cbb-8295032622eb">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">todolist</span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li></ul></li><li class="NavTree2-item subNavHeader" id="25d64269-d8db-4c2a-bdca-bb27a6ec0f43_nav_services">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis"><div class="icon i-nav-services-grey-16"></div><span class="title">Services (3)</span></span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+<ul class="NavTree2-level3"><li class="NavTree2-item subNavContent NavTree2-leaf" id="uniqName_13_2ac8b738e-9103-462f-9c7a-3171494d88b4">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">TodoList-Cloudant</span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li><li class="NavTree2-item subNavContent NavTree2-leaf" id="uniqName_13_2c2d5f5f5-4589-4b00-9bda-62fd749b1dd2">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">TodoList-Mobile-Clien-Access</span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li><li class="NavTree2-item subNavContent NavTree2-leaf" id="uniqName_13_215415018-2369-4cf3-a7a1-aeb307e5b9e2">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis">TodoList-Object-Storage</span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li></ul></li><li class="NavTree2-item subNavHeader NavTree2-leaf" id="25d64269-d8db-4c2a-bdca-bb27a6ec0f43_nav_containers">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis"><div class="icon i-containers-grey"></div><span class="title">Containers (0)</span></span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li><li class="NavTree2-item subNavHeader NavTree2-leaf" id="25d64269-d8db-4c2a-bdca-bb27a6ec0f43_nav_vms">
+	<div class="NavTree2-labelCtnr">
+		<span class="NavTree2-icon"></span>
+		<span class="NavTree2-label cloudOETextWithEllipsis"><div class="icon i-vms-grey"></div><span class="title">Virtual Servers (0)</span></span>
+		<span class="NavTree2-arrow i-arrow-single-teal"></span>
+	</div>
+</li></ul></li></ul></nav>
+
+		</div>
+	</div>
+</div>
+
+		<div class="cloudOEActionBarContentArea" data-dojo-attach-point="actionBarContentArea">
+			<!-- This will get filled in by action bar content from child pane. -->
+		<div data-dojo-attach-point="dashboardActionBarContainer" class="cloudOEDashboardActionBar" id="dijit__WidgetsInTemplateMixin_20" widgetid="dijit__WidgetsInTemplateMixin_20">
+	<div class="selectedNavDiv" data-dojo-attach-point="selectedNavDiv">
+		<div class="selectedNav" data-dojo-attach-point="selectedNav"></div>
+	</div>
+	
+	<div class="geHelpDiv i-gx-closed" data-dojo-attach-event="click:_onGeHelpClick" data-dojo-attach-point="geHelper"></div>
+		
+	<div class="viewFilterDiv" data-dojo-attach-point="viewFilterDiv">
+		<div class="gridViewDiv">
+			<div class="i-grid-toggle-selected gridView" data-dojo-attach-point="gridView" data-dojo-attach-event="click:_onViewClick"></div>
+		</div>
+		<div class="listViewDiv">
+			<div class="i-list-toggle listView" data-dojo-attach-point="listView" data-dojo-attach-event="click:_onViewClick">
+			</div>
+		</div>
+		<div class="cloudOEFilterBar filterBar" data-dojo-attach-point="filterBar">
+			<div class="cloudOESearchBox" style="position:relative" id="dijit__WidgetsInTemplateMixin_21" tabindex="0" widgetid="dijit__WidgetsInTemplateMixin_21">
+	<div class="dijit dijitReset dijitInline dijitLeft dijitTextBox" id="widget_dijit_form_TextBox_0" role="presentation" widgetid="dijit_form_TextBox_0"><div class="dijitReset dijitInputField dijitInputContainer"><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" type="text" tabindex="0" id="dijit_form_TextBox_0" value="" aria-disabled="false"><span class="dijitPlaceHolder dijitInputField cloudOETextWithEllipsis">Type to search</span></div></div>
+   		<span class="cloudOESearchIcon" data-dojo-attach-point="searchIcon">&nbsp;</span>
+</div>
+		</div>
+	</div>
+	
+	<div class="mobileDashboardArea">
+		<div class="flatDivButton flatGridView display-toggle-selected" data-dojo-attach-point="gridViewFlat" data-dojo-attach-event="click:_onViewClick">
+			<span class="flatGridView">Grid View</span>
+		</div>
+		<div class="flatDivButton flatListView" data-dojo-attach-point="listViewFlat" data-dojo-attach-event="click:_onViewClick">
+			<span class="flatListView">List View</span>
+		</div>
+	</div>
+	
+</div></div>
+	</header>
+	
+	<!-- Center Content -->
+	<div class="l-remaining-width cloudOEDockedOpenNav june15Style" data-dojo-attach-point="paneStack">
+
+		<div class="geWrapper isClosed cloudOEGuidedExperience dashboardGe" data-dojo-attach-point="geWrapper" id="dijit__WidgetsInTemplateMixin_8" widgetid="dijit__WidgetsInTemplateMixin_8">
+  <span class="dijit dijitReset dijitInline dijitToggleButton geToggle" role="presentation" widgetid="dijit_form_ToggleButton_0"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="dijit_form_ToggleButton_0_label" tabindex="0" id="dijit_form_ToggleButton_0" aria-pressed="false" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon geIcon geIconHelpToggle" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="dijit_form_ToggleButton_0_label" data-dojo-attach-point="containerNode">Info</span></span></span><input type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span>
+  <div class="geContainer" data-dojo-attach-point="geContainer" data-debug="ge_debug_container">
+    <div data-dojo-attach-point="containerNode" class="cloudOEGuidedExperienceSingleChild">
+			<div class="geStackWrap cloudOEGuidedExperienceMyResources" id="dijit__WidgetsInTemplateMixin_9" widgetid="dijit__WidgetsInTemplateMixin_9">
+	<div class="geButtons">
+		<span role="tablist" data-dojo-attach-event="onkeydown" class="dijitStackController" id="geButtons" widgetid="geButtons"><span class="dijit dijitReset dijitInline dijitToggleButton dijitToggleButtonChecked dijitChecked" role="presentation" widgetid="geButtons_geMyResourcesIntro"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="geButtons_geMyResourcesIntro_label" tabindex="0" id="geButtons_geMyResourcesIntro" aria-disabled="false" title="Overview" aria-selected="true" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="geButtons_geMyResourcesIntro_label" data-dojo-attach-point="containerNode">Overview</span></span></span><input name="geButtons_geMyResourcesIntro" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="geButtons_geMyResourcesCloudFoundry"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="geButtons_geMyResourcesCloudFoundry_label" tabindex="-1" id="geButtons_geMyResourcesCloudFoundry" aria-disabled="false" title="Cloud Foundry" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="geButtons_geMyResourcesCloudFoundry_label" data-dojo-attach-point="containerNode">Cloud Foundry</span></span></span><input name="geButtons_geMyResourcesCloudFoundry" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="geButtons_geMyResourcesContainers"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="geButtons_geMyResourcesContainers_label" tabindex="-1" id="geButtons_geMyResourcesContainers" aria-disabled="false" title="IBM Containers" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="geButtons_geMyResourcesContainers_label" data-dojo-attach-point="containerNode">IBM Containers</span></span></span><input name="geButtons_geMyResourcesContainers" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="geButtons_geMyResourcesVM"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="geButtons_geMyResourcesVM_label" tabindex="-1" id="geButtons_geMyResourcesVM" aria-disabled="false" title="Virtual Servers" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="geButtons_geMyResourcesVM_label" data-dojo-attach-point="containerNode">Virtual Servers</span></span></span><input name="geButtons_geMyResourcesVM" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span></span>	
+	</div>
+	<div class="gePanels cloudOERomanFont">
+		<div data-dojo-type="dijit/layout/StackContainer" dolayout="false" id="geWidget" data-dojo-attach-point="dashboardGuidedExperienceStackContainer" class="dijitStackContainer dijitContainer dijitLayoutContainer" widgetid="geWidget">
+			<div role="tabpanel" class="dijitStackContainerChildWrapper dijitVisible" aria-labelledby="geButtons_geMyResourcesIntro myResourcesIntroButtons_geMyResourcesIntro"><div class="dijitContentPane gePanel dijitStackContainer-child dijitStackContainer-dijitContentPane" id="geMyResourcesIntro" data-dojo-type="dijit/layout/ContentPane" selected="true" tooltip="Overview" widgetid="geMyResourcesIntro" title="">
+				<div class="gePanelIntro">
+					<h3 class="gePanelHeader cloudOEBoldFont">Deploy your app the way you want</h3>
+					<p class="gePanelGraf">Choose the right infrastructure for each project. Click an option to learn more and get started.</p>
+					<!-- 
+					<p class="gePanelGraf gePanelGrafSmaller" data-dojo-attach-point="geMyResourcesIntroSelectInfrastructureChoice"></p>
+					 -->
+				</div>
+				<div class="gePanelBody geFeaturettes cloudOEBoldFont" data-debug-attr="ge_navigation_pane">
+					<span role="tablist" data-dojo-attach-event="onkeydown" class="dijitStackController" id="myResourcesIntroButtons" widgetid="myResourcesIntroButtons"><span class="dijit dijitReset dijitInline dijitToggleButton dijitToggleButtonChecked dijitChecked" role="presentation" widgetid="myResourcesIntroButtons_geMyResourcesIntro"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="myResourcesIntroButtons_geMyResourcesIntro_label" tabindex="0" id="myResourcesIntroButtons_geMyResourcesIntro" aria-disabled="false" title="Overview" aria-selected="true" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="myResourcesIntroButtons_geMyResourcesIntro_label" data-dojo-attach-point="containerNode">Overview</span></span></span><input name="myResourcesIntroButtons_geMyResourcesIntro" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="myResourcesIntroButtons_geMyResourcesCloudFoundry"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="myResourcesIntroButtons_geMyResourcesCloudFoundry_label" tabindex="-1" id="myResourcesIntroButtons_geMyResourcesCloudFoundry" aria-disabled="false" title="Cloud Foundry" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="myResourcesIntroButtons_geMyResourcesCloudFoundry_label" data-dojo-attach-point="containerNode">Cloud Foundry</span></span></span><input name="myResourcesIntroButtons_geMyResourcesCloudFoundry" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="myResourcesIntroButtons_geMyResourcesContainers"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="myResourcesIntroButtons_geMyResourcesContainers_label" tabindex="-1" id="myResourcesIntroButtons_geMyResourcesContainers" aria-disabled="false" title="IBM Containers" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="myResourcesIntroButtons_geMyResourcesContainers_label" data-dojo-attach-point="containerNode">IBM Containers</span></span></span><input name="myResourcesIntroButtons_geMyResourcesContainers" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span><span class="dijit dijitReset dijitInline dijitToggleButton" role="presentation" widgetid="myResourcesIntroButtons_geMyResourcesVM"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="tab" aria-labelledby="myResourcesIntroButtons_geMyResourcesVM_label" tabindex="-1" id="myResourcesIntroButtons_geMyResourcesVM" aria-disabled="false" title="Virtual Servers" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="myResourcesIntroButtons_geMyResourcesVM_label" data-dojo-attach-point="containerNode">Virtual Servers</span></span></span><input name="myResourcesIntroButtons_geMyResourcesVM" type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span></span>
+				</div>
+			</div></div>
+			
+			<div role="tabpanel" class="dijitStackContainerChildWrapper dijitHidden" aria-labelledby="geButtons_geMyResourcesCloudFoundry myResourcesIntroButtons_geMyResourcesCloudFoundry"><div class="dijitContentPane gePanel dijitStackContainer-child dijitStackContainer-dijitContentPane" id="geMyResourcesCloudFoundry" data-dojo-type="dijit/layout/ContentPane" tooltip="Cloud Foundry" widgetid="geMyResourcesCloudFoundry" title="">
+				<div class="gePanelIntro">
+					<h3 class="gePanelHeader cloudOEBoldFont">Cloud Foundry</h3>
+					<p class="gePanelGraf">Build, test, and deploy apps on Bluemix by using open source Cloud Foundry technology. Our Platform as a Service gets you up and running, with no need to manage infrastructure.</p>
+					<p class="gePanelGraf">
+						<a target="_blank" class="geBtn" data-dojo-attach-point="geMyResourcesCFLearnMoreBtn" href="https://www.ng.bluemix.net/docs/#starters/index.html">View Docs</a>
+						<a target="_blank" class="geBtn" data-dojo-attach-point="geMyResourcesCFLabsBtn" href="https://developer.ibm.com/bluemix/docs/category/cloud-foundry-docs/">View Labs</a>
+						<button name="geCreateAContainerButton" type="button" data-dojo-attach-event="onClick:_onCreateAppClick" class="geBtnAppAction">Create an App</button>
+					</p>
+				</div>
+				<div class="gePanelBody gePanelBodySteps cloudOELightFont">
+					<p>Get started quickly with Cloud Foundry:</p>
+					<ol>
+						<li data-dojo-attach-point="geMyresourcesCFDownloadCLI">Download and install the <a target="_blank" href="https://github.com/cloudfoundry/cli/releases">Cloud Foundry command line interface</a>.</li>
+						<li data-dojo-attach-point="geMyResourcesCFCatalogOrCreateNew">Create an app from a starter in the <a target="_blank" href="https://console.ng.bluemix.net/?direct=classic/#">Bluemix Catalog</a> or click <b>CREATE AN APP</b> to get a guided experience.</li>
+						<li>On the app Overview page, click <b>Start Coding</b> to download the starter code, make changes, and run your modified app.</li>
+					</ol>
+				</div>
+			</div></div>
+			
+			<div role="tabpanel" class="dijitStackContainerChildWrapper dijitHidden" aria-labelledby="geButtons_geMyResourcesContainers myResourcesIntroButtons_geMyResourcesContainers"><div class="dijitContentPane gePanel dijitStackContainer-child dijitStackContainer-dijitContentPane" id="geMyResourcesContainers" data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="geMyResourcesContainersPane" tooltip="IBM Containers" widgetid="geMyResourcesContainers" title="">
+				<div class="gePanelIntro">
+					<h3 class="gePanelHeader cloudOEBoldFont">IBM Containers</h3>
+					<p class="gePanelGraf">Use IBM Containers to run apps and services in a hosted cloud environment. Port your existing applications to IBM Bluemix and make them publicly accessible and composable. Use a private registry to upload, store, and retrieve your trusted images.</p>
+					<p class="gePanelGraf">
+						<a target="_blank" href="https://www.ng.bluemix.net/docs/containers/container_index.html" class="geBtn" data-dojo-attach-point="geMyResourcesContainersLearnMoreBtn">View Docs</a>
+						<a target="_blank" class="geBtn" data-dojo-attach-point="geMyResourcesContainersLabsBtn" href="https://developer.ibm.com/bluemix/docs/category/containers/">View Labs</a>
+						<button type="button" class="geBtnAppAction" data-dojo-attach-event="onClick:_onCreateContainerClick">Create a Container</button>
+					</p>
+				</div>
+				<div class="gePanelBody gePanelBodySteps cloudOELightFont">
+					<p>Get started quickly with IBM Containers:</p>
+					<ol>
+						<li data-dojo-attach-point="geMyResourcesContainersInstallDocker"><a href="https://www.ng.bluemix.net/docs/containers/container_cli_cfic.html" target="_blank">Download and install</a> Docker, the Cloud Foundry Command Line interface, and the IBM Containers plug-in for Cloud Foundry.</li>
+						<li>
+							Log in to Bluemix with your IBM id and password:
+							<pre><code>cf login</code></pre>
+						</li>
+						<li>
+							Log in to the IBM Containers service and private registry with your IBM id and password:
+							<pre><code>cf ic login</code></pre>
+						</li>
+						<li data-dojo-attach-point="geMyResourcesContainersMakeDockerfile">In the root directory of your app source files, <a target="_blank" href="https://docs.docker.com/reference/builder/">create a Dockerfile</a>.</li>
+						<li>
+							<span data-dojo-attach-point="geMyResourcesContainersBuildImageFromDockerfile">From the directory with the Dockerfile, build a named <a target="_blank" href="https://docs.docker.com/userguide/dockerimages">Docker image</a>:</span>
+							<pre><code>docker build -t &lt;image_name&gt; .</code></pre>
+						</li>
+						<li>
+							Tag the image with your private registry:
+							<pre><code data-dojo-attach-point="geMyResourcesContainersTagContainerIntoRegistry">docker tag &lt;image_name&gt; registry.{DOMAIN}/{namespace}/&lt;image_name&gt;:&lt;image_tag&gt;</code></pre>
+							The <code>&lt;image_tag&gt;</code> is optional; if omitted, it defaults to <code>latest</code>.
+						</li>
+						<li>Push the image to the private registry for your organization:
+							<pre><code data-dojo-attach-point="geMyResourcesContainersPushCode">docker push registry.{DOMAIN}/{namespace}/&lt;image_name&gt;:&lt;image_tag&gt;</code></pre>
+						</li>
+						<li>Create and start a container from the image in the Bluemix catalog or by using the following command:
+							<pre><code data-dojo-attach-point="geMyResourcesContainersRunCode">cf ic run --name &lt;container_name&gt; registry.{DOMAIN}/{namespace}/&lt;image_name&gt;</code></pre>
+						</li>
+					</ol>
+				</div>
+			</div></div>
+			
+			<div role="tabpanel" class="dijitStackContainerChildWrapper dijitHidden" aria-labelledby="geButtons_geMyResourcesVM myResourcesIntroButtons_geMyResourcesVM"><div class="dijitContentPane gePanel dijitStackContainer-child dijitStackContainer-dijitContentPane" id="geMyResourcesVM" data-dojo-type="dijit/layout/ContentPane" tooltip="Virtual Servers" widgetid="geMyResourcesVM" title="">
+				<div class="gePanelIntro">
+					<h3 class="gePanelHeader cloudOEBoldFont">Virtual Servers <span class="geBetaTag">Beta</span></h3>
+					<p class="gePanelGraf">Get total control over your app's infrastructure by deploying virtual servers. Manage them from the Bluemix Dashboard, or from anywhere with OpenStack APIs.</p>
+					<p class="gePanelGraf">
+						<a target="_blank" class="geBtn" data-dojo-attach-point="geMyResourcesVMLearnMoreBtn" href="https://www.ng.bluemix.net/docs/virtualmachines/vm_index.html">View Docs</a>
+						<button type="button" data-dojo-attach-event="onClick:_onCreateVMClick" class="geBtnAppAction">Create a Virtual Server</button>
+					</p>
+				</div>
+				<div class="gePanelBody gePanelBodySteps cloudOELightFont">
+					<p>Get started quickly with virtual servers:</p>
+					<ol>
+						<li>Click <b>CREATE A VIRTUAL SERVER</b> from the Bluemix Dashboard.</li>
+						<li>Select one of the available virtual server images.</li>
+						<li>Optionally, customize the name or size.</li>
+						<li>Click Next and finish creating the virtual server.</li>
+						<li>Start the Virtual Server.</li>
+					</ol>
+				</div>
+			</div></div>
+		</div>				
+	</div>
+</div>
+		</div>
+  </div>
+</div>
+		
+		<div class="dashboardSection dashboardArtifactCreationSection dijitContentPane fiveTilesOrMore" data-dojo-attach-point="createArtifactDiv" id="dijit__TemplatedMixin_7" widgetid="dijit__TemplatedMixin_7">
+<!-- 
+	<div class="sectionHeader">
+		<div class="sectionName">Create New</div>
+		<hr data-dojo-attach-point="separator">
+	</div>
+ -->
+	<section class="FlexBoxContainer">
+		<div class="tile">
+			<div class="infoContainer">
+				<div class="i-cf-icon"></div>
+				<div class="info">
+					<div class="title">Cloud Foundry Apps</div>
+					<div class="infoSection" data-dojo-attach-point="cfInfoSection">
+						<div data-dojo-attach-point="cfInfo" class=""><span class="highlight">640 MB</span>/1 GB Used</div>
+						<div data-dojo-attach-point="cfInfoInitial" class="dijitHidden">--</div>
+						<div class="infoError dijitHidden" data-dojo-attach-point="cfInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickCreateApp">Create App</div>
+		</div>
+
+		<div class="tile" data-dojo-attach-point="containerTile">
+			<div class="infoContainer">
+				<div class="i-cont-icon"></div>
+				<div class="info">
+					<div class="title">Containers</div>
+					<div class="infoSection" data-dojo-attach-point="containerInfoSection">
+						<div data-dojo-attach-point="containerInfo" class="">
+							<div class="containersRuntimeInfo" data-dojo-attach-point="containersRuntimeInfo"><span class="highlight">0 B</span>/2 GB</div>
+							<div data-dojo-attach-point="containersIPInfo"><span class="highlight">0</span>/0 Public IPs Requested<span class="cloudOEVerticalSeparator">|</span><span class="highlight">0</span> Used</div>
+						</div>
+						<div data-dojo-attach-point="containerInfoInitial" class="dijitHidden">--</div>
+						<div class="infoError dijitHidden" data-dojo-attach-point="containerInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickCreateContainer">Start Containers</div>
+		</div>
+		
+		<div class="tile" data-dojo-attach-point="VMTile">
+			<div class="infoContainer">
+				<div class="i-beta-vm-dash"></div>
+				<div class="info">
+					<div class="title">Virtual Servers</div>
+					<div class="infoSection" data-dojo-attach-point="vmInfoSection">
+						<div data-dojo-attach-point="vmInfo" class="">
+							<span data-dojo-attach-point="vmRuntimeInfo"><span class="highlight">0 B</span>/0 B</span>
+							<span class="cloudOEVerticalSeparator">|</span>
+							<span data-dojo-attach-point="vmIPInfo"><span class="highlight">0</span>/0 Public IPs</span>
+						</div>
+						<div data-dojo-attach-point="vmInfoInitial" class="dijitHidden">--</div>
+						<div class="infoError dijitHidden" data-dojo-attach-point="vmInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickCreateVM">Run Virtual Servers</div>
+		</div>
+		
+		<div class="tile" data-dojo-attach-point="workWithDataTile">
+			<div class="infoContainer">
+				<div class="i-data-door-icon"></div>
+				<div class="info">
+					<div class="title">Data &amp; Analytics</div>
+					<div class="infoSection" data-dojo-attach-point="workWithDataSection">
+						<div data-dojo-attach-point="workWithDataInfo"></div>
+						<div data-dojo-attach-point="workWithDataInfoInitial" class="dijitHidden">--</div>
+						<div class="infoError dijitHidden" data-dojo-attach-point="workWithDataInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickWorkWithData">Work with data</div>
+		</div>
+		
+		<div class="tile" data-dojo-attach-point="useServiceTile">
+			<div class="infoContainer">
+				<div class="i-serv-icon"></div>
+				<div class="info">
+					<div class="title">Services &amp; APIs</div>
+					<div class="infoSection" data-dojo-attach-point="servicesInfoSection">
+						<div data-dojo-attach-point="servicesInfo" class=""><span class="highlight">3</span>/4 Used</div>
+						<div data-dojo-attach-point="servicesInfoInitial" class="dijitHidden">--</div>
+						<div class="infoError dijitHidden" data-dojo-attach-point="servicesInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickUseService">Use Services or APIs</div>
+		</div>
+
+		<div class="tile dijitHidden" data-dojo-attach-point="whiskTile">
+			<div class="infoContainer">
+				<div class="i-serv-icon"></div>
+				<div class="info">
+					<div class="title">Whisk</div>
+					<div class="infoSection" data-dojo-attach-point="whiskInfoSection">
+						<div data-dojo-attach-point="whiskInfo"></div>
+						<div data-dojo-attach-point="whiskInfoInitial">--</div>
+						<div class="infoError" data-dojo-attach-point="whiskInfoError">Data is currently unavailable</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionButton" data-dojo-attach-event="onClick:_onAddClickCreatWhisk">Whisk This Space</div>
+		</div>
+
+	</section>
+
+		</div>
+
+		<div class="stackedPane" id="dashboardPane" data-dojo-attach-point="dashboardPane">
+			<section data-dojo-attach-point="cfSection" class="cloudOEHide">
+				<div data-dojo-attach-point="focusNode" class="dashboardSection dijitContentPane" id="uniqName_6_0" widgetid="uniqName_6_0">
+	<div data-dojo-attach-point="sectionHeader" class="sectionHeader">
+		<div data-dojo-attach-point="sectionHeaderName" class="sectionName">Cloud Foundry</div>
+		<hr data-dojo-attach-point="separator">
+		<div class="i-arrow-single-white-down up" data-dojo-attach-point="upButton" data-dojo-attach-event="onClick:_onUpClick"></div>
+		<div class="i-arrow-single-white-down down" data-dojo-attach-point="downButton" data-dojo-attach-event="onClick:_onDownClick"></div>
+	</div>
+ 
+	<div data-dojo-attach-point="focusNode" class="dijitContentPane" id="uniqName_6_1" widgetid="uniqName_6_1" style="display: none;">
+	<div class="monitor-widgets">
+		<div class="third-column memory-progress">
+			<div class="i-gauge-bg">
+			    <div data-dojo-attach-point="memoryProgressBar" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+    			<div class="gaugeLabel">
+    				<span class="progressBarLabel" data-dojo-attach-point="memoryProgressLabel">--</span>
+					<span class="progressBarName" data-dojo-attach-point="memoryProgressName"></span>
+    			</div>
+			</div>
+		</div>
+		<div class="third-column appHealthGauge">
+				<div data-dojo-attach-point="CenterStatusBorder" class="center CenterStatusBorder red">
+					<div data-dojo-attach-point="CenterStatusImage" class="CenterStatusImg i-dashboard-widget-bad"></div>
+				</div>
+				<div class="gaugeLabel">
+					<span class="progressBarName">App Health</span>
+				</div>
+				<div class="StatusDotContainer" data-dojo-attach-point="StatusDotContainer"><div class="DashboardStatusDot green" data-dojo-attach-point="healthIndicator" style="display:inline-block;" id="dijit__WidgetsInTemplateMixin_26" widgetid="dijit__WidgetsInTemplateMixin_26">
+</div><div class="DashboardStatusDot red" data-dojo-attach-point="healthIndicator" style="display:inline-block;" id="dijit__WidgetsInTemplateMixin_27" widgetid="dijit__WidgetsInTemplateMixin_27">
+</div></div>
+		</div>
+		<div class="third-column service-progress">
+			<div class="i-gauge-bg">
+				<div data-dojo-attach-point="servicesProgressBar" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+				<div class="gaugeLabel">
+					<span class="progressBarLabel" data-dojo-attach-point="servicesProgressLabel">--</span>
+					<span class="progressBarName">Services</span>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- Need to remove the following sections since there is a conflict with the same sections being added in MyResource.html
+	<section data-dojo-attach-point='appsSection'>
+		<div data-dojo-attach-point='appsContentPane' data-dojo-type='cloudOE/panes/MyApps'></div>
+	</section>
+	<section data-dojo-attach-point='servicesSection'>
+		<div data-dojo-attach-point='servicesContentPane' data-dojo-type='cloudOE/panes/MyServices'></div>
+	</section>
+-->
+</div>
+			</section>
+			
+						
+			
+			
+		<section data-dojo-attach-point="appsSection" class="firstSection">
+				<div data-dojo-attach-point="focusNode" class="dashboardSection dijitContentPane app" id="uniqName_17_0" widgetid="uniqName_17_0">
+	<div data-dojo-attach-point="sectionHeader" class="sectionHeader">
+		<div data-dojo-attach-point="sectionHeaderName" class="sectionName">Applications</div>
+		<hr data-dojo-attach-point="separator">
+		<div class="i-arrow-single-white-down up" data-dojo-attach-point="upButton" data-dojo-attach-event="onClick:_onUpClick"></div>
+		<div class="i-arrow-single-white-down down" data-dojo-attach-point="downButton" data-dojo-attach-event="onClick:_onDownClick"></div>
+	</div>
+	<div data-dojo-attach-point="paneStack">
+		<div class="stackedPane grid visible" id="grid_pane_uniqName_17_0">
+			<div data-dojo-attach-point="container" class="tile-container" id="app-container">
+				<div data-dojo-attach-point="placeHolder"></div><div data-dojo-attach-point="focusNode" class="dashboardCard app tile" id="uniqName_15_1" widgetid="uniqName_15_1">
+	<div class="settings" data-dojo-attach-point="appCardGear" id="uniqName_15_1_appCardGear">
+		<img class="cardSettingsIcon" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="appCardGearIcon" alt="Menu">
+		<div class="settings-menu cloudOEHide" tabindex="0" style="outline: none;" id="uniqName_0_4" widgetid="uniqName_0_4">
+	<div data-dojo-attach-point="containerNode">
+			<ul>
+				<li data-dojo-attach-event="onClick:_onStartStopAppClick" class="cloudOEHide">
+					Start App
+				</li>
+				<li data-dojo-attach-event="onClick:_onStartStopAppClick">
+					Stop App
+				</li>
+				<li data-dojo-attach-event="onClick:_onRestartAppClick">
+					Restart App
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onRenameAppClick">
+					Rename App
+				</li>
+				<li data-dojo-attach-event="onClick:_onEditRouteAppClick">
+					Edit Routes and App Access
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onDeleteAppClick">
+					Delete App
+				</li>
+			</ul>
+		</div>
+</div>
+	</div>
+
+	<div class="Tile-cells">
+		<div class="Tile-cell">
+			<img src="./Dashboard - IBM Bluemix_files/i-appicon-48-50.png" alt="K-TodoList" data-dojo-attach-point="mainIcon" class="center appCardMainIcon Tile-item">
+			<div class="Tile-item Tile-titles">
+				<div data-dojo-attach-point="nameCaption" class="Tile-tile name cloudOETextWithEllipsis">K-TodoList</div>
+				<div class="Tile-title tile-route cloudOETextWithEllipsis">
+					<span data-dojo-attach-point="launchURL">k-todolist.mybluemix.net</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="Tile-cell BindingsTile">
+			<div class="Tile-list bindings with-runtime no-bindings" data-dojo-attach-point="bindingsIcons">
+				<div class="cloudOETileListArea runtime" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_22" widgetid="dijit__WidgetsInTemplateMixin_22">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"><li class="cloudOETileListItem cloudOETileListItemBadge_ibm_community" id="uniqName_4_1" widgetid="uniqName_4_1">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv32" data-dojo-attach-point="mainDiv">
+		<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+		<img style="display:inline-block;" src="./Dashboard - IBM Bluemix_files/0" data-dojo-attach-point="mainIcon" alt="Swift" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/default24.png&#39;;">	
+		<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>		
+		<div class="i-add-black"></div> 		
+	</div>			
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">Swift</span>
+	<div class="cloudOETileListItemProviderLabelDiv">
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">Community</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a>
+</li></ul>
+
+				</div>
+				<div class="cloudOETileListArea services hexagons" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_23" widgetid="dijit__WidgetsInTemplateMixin_23">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"></ul>
+
+				</div>
+				<div data-dojo-attach-point="extra_tile" class="i-more-services more_services cloudOEHide">
+					<span data-dojo-attach-point="bound_services_count" class="extra-text"></span>
+				</div> 
+			</div>
+			<div class="EmptyBindings cloudOEHide" data-dojo-attach-point="emptyBindings">
+				<div class="addToAppLink" data-dojo-attach-point="addToAppLink" data-dojo-attach-event="onClick:_onAddToAppLinkClick">	
+					<div class="plusIcon i-plus-grey-small"></div>
+					<span>Add to your app</span>
+				</div>
+				<div class="noBindingsMsg" data-dojo-attach-point="noBindings">No bindings</div>
+			</div>
+		</div>
+
+		<div class="Tile-actions FlexBoxContainer">
+			<div class="Tile-action statusBar statusNoBtn" data-dojo-attach-point="statusBar">
+				<div class="Tile-health health green" data-dojo-attach-point="healthIndicator">Running</div>
+			</div>
+			<div class="Tile-action" data-dojo-attach-point="StartStopTile">
+				<div class="i-refresh-grey restart" data-dojo-attach-point="StartStopIcon" data-dojo-attach-event="onClick:_onRestartAppClick">
+				 </div>
+			</div>
+			<div class="Tile-action" data-dojo-attach-point="launchURLTile">
+				<a data-dojo-attach-point="launchAction" data-dojo-attach-event="onClick:_onLaunchURLClick" href="http://k-todolist.mybluemix.net/" target="clouOEApp_K-TodoList">
+					<img src="./Dashboard - IBM Bluemix_files/blank(1).gif" class="i-launch-square launch">
+				</a>
+			</div>
+			<div class="Tile-action">
+				<div data-dojo-attach-point="_starIconTile" class="i-favorite-unselected favorites" data-dojo-attach-event="onClick:_onFavoriteClick"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+</div><div data-dojo-attach-point="focusNode" class="dashboardCard app tile" id="uniqName_15_2" widgetid="uniqName_15_2">
+	<div class="settings" data-dojo-attach-point="appCardGear" id="uniqName_15_2_appCardGear">
+		<img class="cardSettingsIcon" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="appCardGearIcon" alt="Menu">
+		<div class="settings-menu cloudOEHide" tabindex="0" style="outline: none;" id="uniqName_0_5" widgetid="uniqName_0_5">
+	<div data-dojo-attach-point="containerNode">
+			<ul>
+				<li data-dojo-attach-event="onClick:_onStartStopAppClick" class="cloudOEHide">
+					Start App
+				</li>
+				<li data-dojo-attach-event="onClick:_onStartStopAppClick">
+					Stop App
+				</li>
+				<li data-dojo-attach-event="onClick:_onRestartAppClick">
+					Restart App
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onRenameAppClick">
+					Rename App
+				</li>
+				<li data-dojo-attach-event="onClick:_onEditRouteAppClick">
+					Edit Routes and App Access
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onDeleteAppClick">
+					Delete App
+				</li>
+			</ul>
+		</div>
+</div>
+	</div>
+
+	<div class="Tile-cells">
+		<div class="Tile-cell">
+			<img src="./Dashboard - IBM Bluemix_files/i-appicon-33-64.png" alt="todolist" data-dojo-attach-point="mainIcon" class="center appCardMainIcon Tile-item">
+			<div class="Tile-item Tile-titles">
+				<div data-dojo-attach-point="nameCaption" class="Tile-tile name cloudOETextWithEllipsis">todolist</div>
+				<div class="Tile-title tile-route cloudOETextWithEllipsis">
+					<span data-dojo-attach-point="launchURL">todolist-unhurrying-nonperpetration.mybluemix.net</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="Tile-cell BindingsTile">
+			<div class="Tile-list bindings with-runtime" data-dojo-attach-point="bindingsIcons">
+				<div class="cloudOETileListArea runtime" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_24" widgetid="dijit__WidgetsInTemplateMixin_24">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"><li class="cloudOETileListItem cloudOETileListItemBadge_ibm_community selected" id="uniqName_4_2" widgetid="uniqName_4_2">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv32" data-dojo-attach-point="mainDiv">
+		<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+		<img style="display:inline-block;" src="./Dashboard - IBM Bluemix_files/runtimedefault24.png" data-dojo-attach-point="mainIcon" alt="Runtime" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/default24.png&#39;;">	
+		<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>		
+		<div class="i-add-black"></div> 		
+	</div>			
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">Runtime</span>
+	<div class="cloudOETileListItemProviderLabelDiv">
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">Community</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a>
+</li></ul>
+
+				</div>
+				<div class="cloudOETileListArea services hexagons" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_25" widgetid="dijit__WidgetsInTemplateMixin_25">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"><li class="cloudOETileListItem cloudOETileListItemHexagon cloudOETileListItemBadge_ibm_created" id="uniqName_4_3" widgetid="uniqName_4_3">
+	<a class="serviceIconLink" data-dojo-attach-point="aLink">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv35" data-dojo-attach-point="mainDiv">
+	
+			<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+	
+			<div class="hex hex35">
+    			<img src="./Dashboard - IBM Bluemix_files/0(1)" data-dojo-attach-point="mainIcon" alt="TodoList-Cloudant" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/servicedefault24.png&#39;;">
+			</div>
+			<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>
+			<div class="availabilityBadge dijitHidden" data-dojo-attach-point="availabilityBadge"></div>
+	</div>
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">TodoList-Cloudant</span>
+	<div class="cloudOETileListItemProviderLabelDiv">	
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">IBM</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	</a>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a> 
+</li><li class="cloudOETileListItem cloudOETileListItemHexagon cloudOETileListItemBadge_ibm_created" id="uniqName_4_4" widgetid="uniqName_4_4">
+	<a class="serviceIconLink" data-dojo-attach-point="aLink">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv35" data-dojo-attach-point="mainDiv">
+	
+			<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+	
+			<div class="hex hex35">
+    			<img src="./Dashboard - IBM Bluemix_files/0(2)" data-dojo-attach-point="mainIcon" alt="TodoList-Object-Storage" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/servicedefault24.png&#39;;">
+			</div>
+			<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>
+			<div class="availabilityBadge dijitHidden" data-dojo-attach-point="availabilityBadge"></div>
+	</div>
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">TodoList-Object-Storage</span>
+	<div class="cloudOETileListItemProviderLabelDiv">	
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">IBM</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	</a>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a> 
+</li></ul>
+
+				</div>
+				<div data-dojo-attach-point="extra_tile" class="i-more-services more_services cloudOEHide">
+					<span data-dojo-attach-point="bound_services_count" class="extra-text"></span>
+				</div> 
+			</div>
+			<div class="EmptyBindings cloudOEHide" data-dojo-attach-point="emptyBindings">
+				<div class="addToAppLink" data-dojo-attach-point="addToAppLink" data-dojo-attach-event="onClick:_onAddToAppLinkClick">	
+					<div class="plusIcon i-plus-grey-small"></div>
+					<span>Add to your app</span>
+				</div>
+				<div class="noBindingsMsg" data-dojo-attach-point="noBindings">No bindings</div>
+			</div>
+		</div>
+
+		<div class="Tile-actions FlexBoxContainer">
+			<div class="Tile-action statusBar statusNoBtn" data-dojo-attach-point="statusBar">
+				<div class="Tile-health health red" data-dojo-attach-point="healthIndicator">Not running</div>
+			</div>
+			<div class="Tile-action" data-dojo-attach-point="StartStopTile">
+				<div class="i-refresh-grey restart" data-dojo-attach-point="StartStopIcon" data-dojo-attach-event="onClick:_onRestartAppClick">
+				 </div>
+			</div>
+			<div class="Tile-action" data-dojo-attach-point="launchURLTile">
+				<a data-dojo-attach-point="launchAction" data-dojo-attach-event="onClick:_onLaunchURLClick" href="http://todolist-unhurrying-nonperpetration.mybluemix.net/" target="clouOEApp_todolist">
+					<img src="./Dashboard - IBM Bluemix_files/blank(1).gif" class="i-launch-square launch">
+				</a>
+			</div>
+			<div class="Tile-action">
+				<div data-dojo-attach-point="_starIconTile" class="i-favorite-unselected favorites" data-dojo-attach-event="onClick:_onFavoriteClick"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+
+</div> <!-- Used as a place holder to work with tile-container.js -->
+			<div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div></div>
+			<div class="emptyMessage">
+				<div class="no-items">No items to display.</div>
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_10" widgetid="dijit__WidgetsInTemplateMixin_10">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+		</div>
+		<div class="stackedPane list" id="list_pane_uniqName_17_0">
+			<div class="emptyMessage">
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_11" widgetid="dijit__WidgetsInTemplateMixin_11">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+			<div class="list-container" data-dojo-attach-point="listContainer"></div>
+		</div>
+	</div>
+</div>
+			</section><section data-dojo-attach-point="servicesSection" class="">
+				<div data-dojo-attach-point="focusNode" class="dashboardSection dijitContentPane service" id="uniqName_16_0" widgetid="uniqName_16_0">
+	<div data-dojo-attach-point="sectionHeader" class="sectionHeader">
+		<div data-dojo-attach-point="sectionHeaderName" class="sectionName">Services</div>
+		<hr data-dojo-attach-point="separator">
+		<div class="i-arrow-single-white-down up" data-dojo-attach-point="upButton" data-dojo-attach-event="onClick:_onUpClick"></div>
+		<div class="i-arrow-single-white-down down" data-dojo-attach-point="downButton" data-dojo-attach-event="onClick:_onDownClick"></div>
+	</div>
+	<div data-dojo-attach-point="paneStack">
+		<div class="stackedPane grid visible" id="grid_pane_uniqName_16_0">
+			<div data-dojo-attach-point="container" class="tile-container" id="service-container">
+				<div data-dojo-attach-point="placeHolder"></div><div data-dojo-attach-point="focusNode" class="dashboardCard app tile serviceCard" id="uniqName_15_3" widgetid="uniqName_15_3">
+	<div class="settings" data-dojo-attach-point="serviceCardGear" id="uniqName_15_3_serviceCardGear">
+		<img class="cardSettingsIcon" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="serviceCardGearIcon" alt="Menu">
+		<div class="settings-menu cloudOEHide" tabindex="0" style="outline: none;" id="uniqName_0_6" widgetid="uniqName_0_6">
+	<div data-dojo-attach-point="containerNode">
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onFavoriteClick" data-dojo-attach-point="_starIconLabel" class="cloudOEHide">
+					Favorite
+				</li>
+			</ul>
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onDeleteServiceBindingClick" data-dojo-attach-point="unbindLabel" class="cloudOEHide">
+					Unbind Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onRenameServiceClick" data-dojo-attach-point="renameLabel">
+					Rename Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onDeleteServiceClick" data-dojo-attach-point="deleteLabel">
+					Delete Service
+				</li>
+			</ul>
+		</div>
+</div>
+	</div>
+	<div class="Tile-cells" data-dojo-attach-point="_serviceCardDetail">
+		<a data-dojo-attach-point="aLinkForPrivate">
+		<div class="Tile-cell ServiceNameTile">
+			<div data-dojo-attach-point="containerNode"><div id="dijit__WidgetsInTemplateMixin_28" widgetid="dijit__WidgetsInTemplateMixin_28">
+	<div class="Tile-item center appCardMainIcon">
+		<ul data-dojo-attach-point="mainIcon"><li class="cloudOETileListItem cloudOETileListItemHexagon cloudOETileListItemBadge_ibm_created" id="uniqName_4_6" widgetid="uniqName_4_6">
+	<a class="serviceIconLink" data-dojo-attach-point="aLink">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv40" data-dojo-attach-point="mainDiv">
+	
+			<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+	
+			<div class="hex hex40">
+    			<img src="./Dashboard - IBM Bluemix_files/0(3)" data-dojo-attach-point="mainIcon" alt="TodoList-Cloudant" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/servicedefault32.png&#39;;">
+			</div>
+			<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>
+			<div class="availabilityBadge dijitHidden" data-dojo-attach-point="availabilityBadge"></div>
+	</div>
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">TodoList-Cloudant</span>
+	<div class="cloudOETileListItemProviderLabelDiv">	
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">IBM</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	</a>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a> 
+</li></ul>
+	</div>
+	<div data-dojo-attach-point="nameCaption" class="Tile-titles Tile-title Tile-item name cloudOETextWithEllipsis">TodoList-Cloudant</div>
+	<div data-dojo-attach-point="offeringNameCaption" class="Tile-title tile-route dashboardCardServiceOfferingName cloudOETextWithEllipsis">Cloudant NoSQL DB</div>
+</div></div>
+		</div>
+		<div class="Tile-cell bindingsList">
+			<div class="Tile-list bindings no-runtime service_bindings" data-dojo-attach-point="bindingsIcons">
+				<div class="cloudOETileListArea" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_29" widgetid="dijit__WidgetsInTemplateMixin_29">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"><li class="cloudOETileListItem cloudOETileListItemBadge_ibm_community" id="uniqName_4_15" widgetid="uniqName_4_15">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv32" data-dojo-attach-point="mainDiv">
+		<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+		<img style="display:inline-block;" src="./Dashboard - IBM Bluemix_files/i-appicon-3-32.png" data-dojo-attach-point="mainIcon" alt="todolist" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/default32.png&#39;;">	
+		<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>		
+		<div class="i-add-black"></div> 		
+	</div>			
+	<span class="tileName cloudOETextWithEllipsis" data-dojo-attach-point="mainName">todolist</span>
+	<div class="cloudOETileListItemProviderLabelDiv">
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">Community</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a>
+</li></ul>
+
+				</div>
+				<div data-dojo-attach-point="extra_tile" class="more_apps cloudOEHide">
+					<div class="i-more-apps-light">
+						<span data-dojo-attach-point="bound_apps_count" class="extra-text"></span>
+					</div>
+				</div> 
+			</div>
+			<div class="EmptyBindings cloudOEHide" data-dojo-attach-point="emptyBindings">
+				<div class="unbound_service">Unbound Service</div>
+			</div>
+		</div>
+		</a>
+		<div class="Tile-actions serviceTileActions FlexBoxContainer" data-dojo-attach-point="_serviceTileActions" data-dojo-attach-event="onclick:_onClickServiceTileActions">
+			<!-- Quick Doc bar for App Details Service Card -->
+			
+
+			<div class="Tile-action servicePlanTileAction FlexBoxContainer" data-dojo-attach-point="_servicePlanTile">
+				<div data-dojo-attach-point="_servicePlanLabel" class="servicePlanLabel">Plan: </div>
+				<div data-dojo-attach-point="_servicePlan" class="servicePlanTile actionTile cloudOETextWithEllipsis">Shared</div>
+			</div>
+			
+			
+			<div class="Tile-action starTileAction" data-dojo-attach-point="_starTile">
+				<div data-dojo-attach-point="_starIconTile" class="i-favorite-unselected favorites" data-dojo-attach-event="onClick:_onFavoriteClick"></div>
+			</div>
+		</div>
+		
+	</div>
+</div><div data-dojo-attach-point="focusNode" class="dashboardCard app tile serviceCard" id="uniqName_15_4" widgetid="uniqName_15_4">
+	<div class="settings" data-dojo-attach-point="serviceCardGear" id="uniqName_15_4_serviceCardGear">
+		<img class="cardSettingsIcon" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="serviceCardGearIcon" alt="Menu">
+		<div class="settings-menu cloudOEHide" tabindex="0" style="outline: none;" id="uniqName_0_7" widgetid="uniqName_0_7">
+	<div data-dojo-attach-point="containerNode">
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onFavoriteClick" data-dojo-attach-point="_starIconLabel" class="cloudOEHide">
+					Favorite
+				</li>
+			</ul>
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onDeleteServiceBindingClick" data-dojo-attach-point="unbindLabel" class="cloudOEHide">
+					Unbind Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onRenameServiceClick" data-dojo-attach-point="renameLabel">
+					Rename Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onDeleteServiceClick" data-dojo-attach-point="deleteLabel">
+					Delete Service
+				</li>
+			</ul>
+		</div>
+</div>
+	</div>
+	<div class="Tile-cells" data-dojo-attach-point="_serviceCardDetail">
+		<a data-dojo-attach-point="aLinkForPrivate">
+		<div class="Tile-cell ServiceNameTile">
+			<div data-dojo-attach-point="containerNode"><div id="dijit__WidgetsInTemplateMixin_30" widgetid="dijit__WidgetsInTemplateMixin_30">
+	<div class="Tile-item center appCardMainIcon">
+		<ul data-dojo-attach-point="mainIcon"><li class="cloudOETileListItem cloudOETileListItemHexagon cloudOETileListItemBadge_ibm_created" id="uniqName_4_7" widgetid="uniqName_4_7">
+	<a class="serviceIconLink" data-dojo-attach-point="aLink">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv40" data-dojo-attach-point="mainDiv">
+	
+			<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+	
+			<div class="hex hex40">
+    			<img src="./Dashboard - IBM Bluemix_files/0(4)" data-dojo-attach-point="mainIcon" alt="TodoList-Mobile-Clien-Access" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/servicedefault32.png&#39;;">
+			</div>
+			<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>
+			<div class="availabilityBadge dijitHidden" data-dojo-attach-point="availabilityBadge"></div>
+	</div>
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">TodoList-Mobile-Clien-Access</span>
+	<div class="cloudOETileListItemProviderLabelDiv">	
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">IBM</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	</a>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a> 
+</li></ul>
+	</div>
+	<div data-dojo-attach-point="nameCaption" class="Tile-titles Tile-title Tile-item name cloudOETextWithEllipsis">TodoList-Mobile-Clien-Access</div>
+	<div data-dojo-attach-point="offeringNameCaption" class="Tile-title tile-route dashboardCardServiceOfferingName cloudOETextWithEllipsis">Mobile Client Access</div>
+</div></div>
+		</div>
+		<div class="Tile-cell bindingsList">
+			<div class="Tile-list bindings no-runtime no-bindings service_bindings cloudOEHide" data-dojo-attach-point="bindingsIcons">
+				<div class="cloudOETileListArea" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_31" widgetid="dijit__WidgetsInTemplateMixin_31">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"></ul>
+
+				</div>
+				<div data-dojo-attach-point="extra_tile" class="more_apps cloudOEHide">
+					<div class="i-more-apps-light">
+						<span data-dojo-attach-point="bound_apps_count" class="extra-text"></span>
+					</div>
+				</div> 
+			</div>
+			<div class="EmptyBindings" data-dojo-attach-point="emptyBindings">
+				<div class="unbound_service">Unbound Service</div>
+			</div>
+		</div>
+		</a>
+		<div class="Tile-actions serviceTileActions FlexBoxContainer" data-dojo-attach-point="_serviceTileActions" data-dojo-attach-event="onclick:_onClickServiceTileActions">
+			<!-- Quick Doc bar for App Details Service Card -->
+			
+
+			<div class="Tile-action servicePlanTileAction FlexBoxContainer" data-dojo-attach-point="_servicePlanTile">
+				<div data-dojo-attach-point="_servicePlanLabel" class="servicePlanLabel">Plan: </div>
+				<div data-dojo-attach-point="_servicePlan" class="servicePlanTile actionTile cloudOETextWithEllipsis">Gold</div>
+			</div>
+			
+			
+			<div class="Tile-action starTileAction" data-dojo-attach-point="_starTile">
+				<div data-dojo-attach-point="_starIconTile" class="i-favorite-unselected favorites" data-dojo-attach-event="onClick:_onFavoriteClick"></div>
+			</div>
+		</div>
+		
+	</div>
+</div><div data-dojo-attach-point="focusNode" class="dashboardCard app tile serviceCard" id="uniqName_15_5" widgetid="uniqName_15_5">
+	<div class="settings" data-dojo-attach-point="serviceCardGear" id="uniqName_15_5_serviceCardGear">
+		<img class="cardSettingsIcon" src="./Dashboard - IBM Bluemix_files/blank(1).gif" data-dojo-attach-point="serviceCardGearIcon" alt="Menu">
+		<div class="settings-menu cloudOEHide" tabindex="0" style="outline: none;" id="uniqName_0_8" widgetid="uniqName_0_8">
+	<div data-dojo-attach-point="containerNode">
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onFavoriteClick" data-dojo-attach-point="_starIconLabel" class="cloudOEHide">
+					Favorite
+				</li>
+			</ul>
+			<ul class="cloudOEHide">
+				<li data-dojo-attach-event="onClick:_onDeleteServiceBindingClick" data-dojo-attach-point="unbindLabel" class="cloudOEHide">
+					Unbind Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onRenameServiceClick" data-dojo-attach-point="renameLabel">
+					Rename Service
+				</li>
+			</ul>
+			<ul>
+				<li data-dojo-attach-event="onClick:_onDeleteServiceClick" data-dojo-attach-point="deleteLabel">
+					Delete Service
+				</li>
+			</ul>
+		</div>
+</div>
+	</div>
+	<div class="Tile-cells" data-dojo-attach-point="_serviceCardDetail">
+		<a data-dojo-attach-point="aLinkForPrivate">
+		<div class="Tile-cell ServiceNameTile">
+			<div data-dojo-attach-point="containerNode"><div id="dijit__WidgetsInTemplateMixin_32" widgetid="dijit__WidgetsInTemplateMixin_32">
+	<div class="Tile-item center appCardMainIcon">
+		<ul data-dojo-attach-point="mainIcon"><li class="cloudOETileListItem cloudOETileListItemHexagon cloudOETileListItemBadge_ibm_created" id="uniqName_4_9" widgetid="uniqName_4_9">
+	<a class="serviceIconLink" data-dojo-attach-point="aLink">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv40" data-dojo-attach-point="mainDiv">
+	
+			<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+	
+			<div class="hex hex40">
+    			<img src="./Dashboard - IBM Bluemix_files/0(5)" data-dojo-attach-point="mainIcon" alt="TodoList-Object-Storage" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/servicedefault32.png&#39;;">
+			</div>
+			<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>
+			<div class="availabilityBadge dijitHidden" data-dojo-attach-point="availabilityBadge"></div>
+	</div>
+	<span class="tileName cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="mainName">TodoList-Object-Storage</span>
+	<div class="cloudOETileListItemProviderLabelDiv">	
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">IBM</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	</a>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a> 
+</li></ul>
+	</div>
+	<div data-dojo-attach-point="nameCaption" class="Tile-titles Tile-title Tile-item name cloudOETextWithEllipsis">TodoList-Object-Storage</div>
+	<div data-dojo-attach-point="offeringNameCaption" class="Tile-title tile-route dashboardCardServiceOfferingName cloudOETextWithEllipsis">Object Storage</div>
+</div></div>
+		</div>
+		<div class="Tile-cell bindingsList">
+			<div class="Tile-list bindings no-runtime service_bindings" data-dojo-attach-point="bindingsIcons">
+				<div class="cloudOETileListArea" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_33" widgetid="dijit__WidgetsInTemplateMixin_33">
+	<div class="cloudOETileListAreaLabel dijitHidden" data-dojo-attach-point="labelNode"></div>
+	<ul data-dojo-attach-point="tileList"><li class="cloudOETileListItem cloudOETileListItemBadge_ibm_community" id="uniqName_4_16" widgetid="uniqName_4_16">
+	<div class="cloudOETileListItemMainDiv cloudOETileListItemMainDiv32" data-dojo-attach-point="mainDiv">
+		<span class="cloudOETileListItemSeparator dijitHidden" data-dojo-attach-point="tileSeparator" data-dojo-attach-event="onclick:onSeparatorClick"></span>
+		<img style="display:inline-block;" src="./Dashboard - IBM Bluemix_files/i-appicon-3-32.png" data-dojo-attach-point="mainIcon" alt="todolist" onerror="this.onError=null;this.src=&#39;//console-monolith-20160602-164011.ng.bluemix.net/images/logos/default32.png&#39;;">	
+		<div class="cornerBadge dijitHidden" data-dojo-attach-point="cornerBadge"></div>		
+		<div class="i-add-black"></div> 		
+	</div>			
+	<span class="tileName cloudOETextWithEllipsis" data-dojo-attach-point="mainName">todolist</span>
+	<div class="cloudOETileListItemProviderLabelDiv">
+		<span class="cloudOETileListItemProviderLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="badgeName">Community</span>
+		<span class="cloudOETileListItemProviderStageLabel cloudOETextWithEllipsis dijitHidden" data-dojo-attach-point="stageName"></span>
+	</div>
+	<a class="button dijitHidden" href="javascript:;" data-dojo-attach-point="learnMore">View More</a>
+</li></ul>
+
+				</div>
+				<div data-dojo-attach-point="extra_tile" class="more_apps cloudOEHide">
+					<div class="i-more-apps-light">
+						<span data-dojo-attach-point="bound_apps_count" class="extra-text"></span>
+					</div>
+				</div> 
+			</div>
+			<div class="EmptyBindings cloudOEHide" data-dojo-attach-point="emptyBindings">
+				<div class="unbound_service">Unbound Service</div>
+			</div>
+		</div>
+		</a>
+		<div class="Tile-actions serviceTileActions FlexBoxContainer" data-dojo-attach-point="_serviceTileActions" data-dojo-attach-event="onclick:_onClickServiceTileActions">
+			<!-- Quick Doc bar for App Details Service Card -->
+			
+
+			<div class="Tile-action servicePlanTileAction FlexBoxContainer" data-dojo-attach-point="_servicePlanTile">
+				<div data-dojo-attach-point="_servicePlanLabel" class="servicePlanLabel">Plan: </div>
+				<div data-dojo-attach-point="_servicePlan" class="servicePlanTile actionTile cloudOETextWithEllipsis">standard</div>
+			</div>
+			
+			
+			<div class="Tile-action starTileAction" data-dojo-attach-point="_starTile">
+				<div data-dojo-attach-point="_starIconTile" class="i-favorite-unselected favorites" data-dojo-attach-event="onClick:_onFavoriteClick"></div>
+			</div>
+		</div>
+		
+	</div>
+</div> <!-- Used as a place holder to work with tile-container.js -->
+			<div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div></div>
+			<div class="emptyMessage">
+				<div class="no-items">No items to display.</div>
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_12" widgetid="dijit__WidgetsInTemplateMixin_12">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+		</div>
+		<div class="stackedPane list" id="list_pane_uniqName_16_0">
+			<div class="emptyMessage">
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_13" widgetid="dijit__WidgetsInTemplateMixin_13">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+			<div class="list-container" data-dojo-attach-point="listContainer"></div>
+		</div>
+	</div>
+</div>
+			</section><section data-dojo-attach-point="containersSection" class="">
+				<div data-dojo-attach-point="focusNode" class="dashboardSection dijitContentPane no-items container no-search-results" id="uniqName_14_0" widgetid="uniqName_14_0">
+	<div data-dojo-attach-point="sectionHeader" class="sectionHeader">
+		<div data-dojo-attach-point="sectionHeaderName" class="sectionName"><span>Containers</span></div>
+		<hr data-dojo-attach-point="separator">
+		<div class="i-arrow-single-white-down up" data-dojo-attach-point="upButton" data-dojo-attach-event="onClick:_onUpClick"></div>
+		<div class="i-arrow-single-white-down down" data-dojo-attach-point="downButton" data-dojo-attach-event="onClick:_onDownClick"></div>
+	</div>
+	<div data-dojo-attach-point="paneStack"><div data-dojo-attach-point="focusNode" class="scorecards dijitContentPane dijitHidden" id="dijit__WidgetsInTemplateMixin_16" widgetid="dijit__WidgetsInTemplateMixin_16">
+	<div class="monitor-widgets">
+		<div id="dijit__TemplatedMixin_8" class="column containerUsage" widgetid="dijit__TemplatedMixin_8">
+	<div class="i-gauge-bg">
+		<div data-dojo-attach-point="meterNode" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+		<div class="gaugeLabel">
+			<span class="progressBarLabel" data-dojo-attach-point="labelNode">--</span>
+			<span class="progressBarName" data-dojo-attach-point="nameNode"></span>
+		</div>
+	</div>
+</div>
+		<div id="dijit__TemplatedMixin_9" class="column publicIpUsage" widgetid="dijit__TemplatedMixin_9">
+	<div class="i-gauge-bg">
+		<div data-dojo-attach-point="meterNode" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+		<div class="gaugeLabel">
+			<span class="progressBarLabel" data-dojo-attach-point="labelNode">--</span>
+			<span class="progressBarName" data-dojo-attach-point="nameNode">PUBLIC IPs</span>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+		<div class="stackedPane grid visible" id="grid_pane_uniqName_14_0">
+			<div data-dojo-attach-point="container" class="tile-container" style="display: none" id="container-container">
+				<div data-dojo-attach-point="placeHolder"></div> <!-- Used as a place holder to work with tile-container.js -->
+			<div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div></div>
+			<div class="emptyMessage">
+				<div class="no-items">No items to display.</div>
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_14" widgetid="dijit__WidgetsInTemplateMixin_14">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+		</div>
+		<div class="stackedPane list" id="list_pane_uniqName_14_0">
+			<div class="emptyMessage">
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_15" widgetid="dijit__WidgetsInTemplateMixin_15">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+			<div class="list-container" data-dojo-attach-point="listContainer" style="display: none;"></div>
+		</div>
+	</div>
+</div>
+			</section><section data-dojo-attach-point="vmsSection" class="lastSection">
+				<div data-dojo-attach-point="focusNode" class="dashboardSection dijitContentPane no-items vm no-search-results" id="uniqName_15_0" widgetid="uniqName_15_0">
+	<div data-dojo-attach-point="sectionHeader" class="sectionHeader">
+		<div data-dojo-attach-point="sectionHeaderName" class="sectionName"><span>Virtual Servers</span><span class="beta cloudOEBoldFont">Beta</span></div>
+		<hr data-dojo-attach-point="separator">
+		<div class="i-arrow-single-white-down up" data-dojo-attach-point="upButton" data-dojo-attach-event="onClick:_onUpClick"></div>
+		<div class="i-arrow-single-white-down down" data-dojo-attach-point="downButton" data-dojo-attach-event="onClick:_onDownClick"></div>
+	</div>
+	<div data-dojo-attach-point="paneStack"><div data-dojo-attach-point="focusNode" class="dijitContentPane dijitHidden" id="dijit__WidgetsInTemplateMixin_19" widgetid="dijit__WidgetsInTemplateMixin_19">
+	<div class="monitor-widgets">
+		<div id="dijit__TemplatedMixin_10" class="third-column vCPU-progress" widgetid="dijit__TemplatedMixin_10">
+	<div class="i-gauge-bg">
+		<div data-dojo-attach-point="meterNode" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+		<div class="gaugeLabel">
+			<span class="progressBarLabel" data-dojo-attach-point="labelNode">--</span>
+			<span class="progressBarName" data-dojo-attach-point="nameNode">PUBLIC vCPU</span>
+		</div>
+	</div>
+</div>
+		<div id="dijit__TemplatedMixin_11" class="third-column memory-progress" widgetid="dijit__TemplatedMixin_11">
+	<div class="i-gauge-bg">
+		<div data-dojo-attach-point="meterNode" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+		<div class="gaugeLabel">
+			<span class="progressBarLabel" data-dojo-attach-point="labelNode">--</span>
+			<span class="progressBarName" data-dojo-attach-point="nameNode"></span>
+		</div>
+	</div>
+</div>
+		<div id="dijit__TemplatedMixin_12" class="third-column publicIPs-progress" widgetid="dijit__TemplatedMixin_12">
+	<div class="i-gauge-bg">
+		<div data-dojo-attach-point="meterNode" class="radial percent0"><b><i></i></b><b><i></i></b></div>
+		<div class="gaugeLabel">
+			<span class="progressBarLabel" data-dojo-attach-point="labelNode">--</span>
+			<span class="progressBarName" data-dojo-attach-point="nameNode">PUBLIC IPs</span>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+		<div class="stackedPane grid visible" id="grid_pane_uniqName_15_0">
+			<div data-dojo-attach-point="container" class="tile-container" style="display: none" id="vm-container">
+				<div data-dojo-attach-point="placeHolder"></div> <!-- Used as a place holder to work with tile-container.js -->
+			<div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div><div class="tile gap"></div></div>
+			<div class="emptyMessage">
+				<div class="no-items">No items to display.</div>
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_17" widgetid="dijit__WidgetsInTemplateMixin_17">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+		</div>
+		<div class="stackedPane list" id="list_pane_uniqName_15_0">
+			<div class="emptyMessage">
+				<div class="cloudOEMessageArea dijitHidden lightUI" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_18" widgetid="dijit__WidgetsInTemplateMixin_18">
+	<span data-dojo-attach-point="closeButtonNode" class="sbscDialogCloseIcon dijitHidden" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+	</span>
+	<table>
+		<tbody><tr>
+			<td id="iconCell"><div data-dojo-attach-point="iconDiv"></div></td>
+			<td class="cloudOEMessageAreaTextCell">
+				<span class="idxDialogIconText cloudOEMessageAreaText" data-dojo-attach-point="messageSpan"></span>
+			</td>
+		</tr>
+	</tbody></table>			
+</div>
+			</div>
+			<div class="list-container" data-dojo-attach-point="listContainer" style="display: none;"></div>
+		</div>
+	</div>
+</div>
+			</section></div>
+		<div class="stackedPane" id="noSpacesPane" data-dojo-attach-point="noSpacesPane">
+		</div>
+		<div class="stackedPane emptyPaneStyle visible" id="blankPane" data-dojo-attach-point="blankPane"></div>
+		<div class="stackedPane emptyPaneStyle" id="emptyDashboardPane" data-dojo-attach-point="emptyDashboardPane">You haven't created anything yet. Create an app or browse the <a href="javascript:;">Bluemix Catalog</a> to get started.</div>
+		<div class="stackedPane emptyPaneStyle" id="emptyDashboardPaneNoDevRole" data-dojo-attach-point="emptyDashboardPaneNoDevRole">No items to display.</div>
+	</div>
+</div></div></div></div>
+</div></div></div></div></div></div><!-- Used to show a spinner while we're initializing the UI, and before we startshowing content in the main content area (like Dashboard, Pricing, etc.) --><div id="loading" class="aceLoading"></div><!-- Load some smaller, static images that we know we'll need --><img style="display:none;" src="./Dashboard - IBM Bluemix_files/sprite.png"><img style="display:none;" src="./Dashboard - IBM Bluemix_files/blank(2).gif"><img style="display:none;" src="./Dashboard - IBM Bluemix_files/loading.gif"><script>var isOldIE = false, isVeryOldIE = false;</script><!--[if IE]><script>isOldIE = true;</script><![endif]--><!--[if lt IE 9]><script>isVeryOldIE = true;</script><![endif]--><script type="text/javascript">var bodyWrapper = document.getElementById("bodyWrapper");var loadingNode = document.getElementById("loading");var messageNode = document.getElementById("unsupportedMessage");var locale = "en";var unsupportedMessage = {"en-us": "<p>The browser that you are using is not supported by IBM Bluemix&trade;. For best results, use one of the following browsers:</p><ul><li>Chrome</li><li>Firefox</li><li>Internet Explorer (10 and above)</li><li>Safari</li></ul>"};var ua = navigator.userAgent;if (isVeryOldIE) { /* For IE below 9, Dojo utilities can not be used. */bodyWrapper.className = "no-show";loadingNode.className = "no-show";var msg = unsupportedMessage[locale] || unsupportedMessage["en-us"];messageNode.innerHTML = msg;messageNode.className = "";} else if (isOldIE || !/chrome|firefox|safari|trident/i.test(ua)) {require(["dojo/i18n!../lib/cloudOE/nls/resources.js"], function(resources) {bodyWrapper.className = "no-show";loadingNode.className = "no-show";messageNode.innerHTML = resources.unsupportedMessage;messageNode.className = "";});}</script><script src="./Dashboard - IBM Bluemix_files/common-header-dojo.min.js"></script><script type="text/javascript">header.oauth2ProxyUrl = "/dashboard/oauth2_proxy";header.sessionTimeoutUrl = "/dashboard/sessionTimeout";storage.cfUrl = "https://api.ng.bluemix.net";</script><script type="text/javascript" charset="utf-8" src="./Dashboard - IBM Bluemix_files/socket.io.js"></script><script type="text/javascript" charset="utf-8" src="./Dashboard - IBM Bluemix_files/amplitude-2.12.1-min.gz.js"></script><script type="text/javascript" charset="utf-8" src="./Dashboard - IBM Bluemix_files/ProtoBuf.min.js"></script><script type="text/javascript" charset="utf-8" src="./Dashboard - IBM Bluemix_files/ByteBufferAB.min.js"></script><script type="text/javascript" charset="utf-8" src="./Dashboard - IBM Bluemix_files/Long.min.js"></script><script src="./Dashboard - IBM Bluemix_files/dojo.js"></script><script src="./Dashboard - IBM Bluemix_files/main.js"></script><script src="./Dashboard - IBM Bluemix_files/ace_common.js"></script><script src="./Dashboard - IBM Bluemix_files/MyResourcesNavigator.js"></script><script src="./Dashboard - IBM Bluemix_files/download_button.js"></script><script>window.publicInfo = {"alchemyInstallContainersCLIURL":"/containers/container_cli_cfic.html","disabledSolutions":[],"statusPageURL":"https://developer.ibm.com/bluemix/support/#status","appCreateInstancePollingStartInterval":5000,"alchemyDockerfileURL":"https://docs.docker.com/reference/builder/","cloudFoundryURL":"https://api.ng.bluemix.net","alchemyCFLearnMoreURL":"/#starters/index.html","enableSTChat":true,"enableAccountBilling":true,"useNewCatalog":true,"isAccountServicesAvailable":true,"authorization_endpoint":"https://login.ng.bluemix.net/UAALoginServerWAR","paratureLink":"https://support.ibmcloud.com/ics/support/mylogin.asp?login=bluemix","showLoggingUI":true,"iotTemplateId":"iot-template","alchemyVMQuotaEnabled":false,"enableAccountNotifications":true,"xhrResponseTimeout":90000,"isAccountMandatory":false,"ibmClientPortal":"http://support.ibmcloud.com/","sbsInviteUserURL":"https://apps.admin.ibmcloud.com/account/invite/user","gitWithDevOpsDocAPI":"{BASE}/starters/deploy_devops.html","enableNewCreateButtonDashboardChanges":true,"exploreSamplesURL":"https://hub.jazz.net/user/communitysample","dedicatedSupportLocalContacts":[],"alchemyDockerImagesURL":"https://docs.docker.com/userguide/dockerimages","signupURL":"/trial","buildVersion":"1.10.0-20160524-1708","communityURL":"https://developer.ibm.com/bluemix/","enableStatusLink":true,"iotDocAPI":"{BASE}/starters/IoT/start_iot.html","productTermsURL":"http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm","enableServiceAccessAuth":true,"enableBareMetalPricing":false,"JAZZ_ENABLED":true,"eCustomerCustomerCareURL":"https://www-112.ibm.com/software/howtobuy/softwareandservices/buynow/authorization/docs/en_US/ecare.html","runtimeCost":0.07,"enableNodeJsMobileURL":"/#starters/mobile/mobilecloud/nodejsmobile.html#existnodejs","alchemyContainerBaseUrl":"https://containers-api.{DOMAIN}/v3","maxParallelGets":8,"isDedicatedDeployed":false,"enableBSSInviteUserFeature":true,"manageInfrastructureUrl":"https://clouds.{DOMAIN}/v1/clouds","cloudFoundryLearnURL":"http://www.ibm.com/cloud-computing/us/en/open-cloud.html","registerMobileClientDocAPI":"{BASE}/starters/register_mobile.html","useNewServiceDetails":false,"docAPIBase":"/api/content","stChatCenter":"CPS","alchemyContainerQuotaEnabled":true,"enablePlatformNotifications":false,"appCreateInstancePollingInterval":3000,"alchemyContainerProxyEnabled":false,"javaStarterUrl":"/#starters/mobile/javascript/javascript.html","THIRDPARTY_ENDPOINT_URL":"http://MeteringInterface-Provider.ng.bluemix.net","eclipseToolingSupported":["javaHelloWorld","nodejsHelloWorld"],"dashDBContact":"dashDB_info@wwpdl.vnetibm.com","accountUpgradeBlacklist":null,"enableWorkWithData":true,"alchemyContainerEnabled":true,"useGitAppCreateFlows":false,"numberOfDaysLeftInTrial":null,"alchemyContainersCILabURL":"https://developer.ibm.com/bluemix/docs/set-up-continuous-delivery-ibm-containers/","useOldUDGSecurityKey":null,"alchemyVMBaseUrl":"https://virtualmachines.{DOMAIN}/v1","maxMemoryPerAppInstance":null,"storeStarterCategories":["boilerplate","runtime"],"enableContainerPricing":true,"iOSLandingHero":null,"alchemyInstallDockerURL":null,"scwHost":"http://www.ibm.com","sdkDownloadURL":"/#starters/mobile/index.html","commandLineDocAPI":"{BASE}/starters/install_cli.html","cometdEnabled":false,"bluemixTermsOfUseUrl":"https://www.ng.bluemix.net/docs/#navigation/notices.html#terms","dedicatedCompanyName":"","disableMobileFirst":false,"alchemyContainerVolumeStorageEnabled":true,"maxFileSize":512,"isVideoDeskEnabled":false,"orgCreateDeleteAllowedForAllUsers":false,"freeCertificateUploads":4,"enableCertTrustStoreUpload":true,"mccpUrl":"{SCHEME}://mccp.{DOMAIN}","consoleClassicHost":"console-monolith-20160602-164011.ng.bluemix.net","isPlanChangeEnabled":true,"alchemyContainerCatalogEnabled":true,"nodeRedDocAPI":"{BASE}/starters/Node-RED/start_nodered.html","stChatQueue":"BLUEMIX_DSET","mobileFirstGettingStarted":"/#starters/mobilefirst/gettingstarted/index.html#gettingstarted","logoImgSrc":null,"hideGuidedExperience":false,"alchemyVMSingleOnDashboardEnabled":true,"privacyURL":"http://www.ibm.com/privacy","daysLeftInTrialDisplay":[20,15,10,5,2,1,0],"runtimeFreeQuota":375,"enableNewOrgRegionSwitcher":true,"enableInviteUserFeature":true,"contactInfo":null,"creditcardHowtoDocURL":"","appTermsUrl":"https://www.ibm.com/software/sla/sladb.nsf/sla/bm-6626-01","stChatScriptURL":"//www-919.ibm.com/stscripts/bluemix/script.js","mccpRegionURLOverrides":null,"videoDeskUID_LoggedIn":"9ee3cb3c0642fe4e4887f17915a91e4b","BYOBDocsURL":"/#starters/byob.html","accountNotificationsUrl":null,"betaDocURL":null,"enablePricingFeatures":true,"mediaFeedsAllowed":true,"aspmUrl":"","alchemyContainersLabsURL":"https://developer.ibm.com/bluemix/docs/category/containers/","useDeploymentPane":false,"orgCreationAllowed":true,"editCreditCardLink":"https://www-112.ibm.com/software/howtobuy/softwareandservices/managepaymentmethods/MCC?P0=MCC1&redirectFrom=BMX-NG","dedicatedSupportPhone":"","alchemyVMCatalogEnabled":false,"commandLineURL":"/#starters/install_cli.html","token_endpoint":"https://uaa.ng.bluemix.net","storeServiceCategories":["watson","mobile","dev_ops","web_and_app","integration","data_management","big_data","security","business_analytics","internet_of_things","payments","search","media","private"],"alchemyCFCLIURL":"https://github.com/cloudfoundry/cli/releases","enableTieredPricing":true,"iOSStarter":"/#starters/mobile/ios/ios.html","appSecretURL":"https://mas.{DOMAIN}/mas/v1/apps/{APP_GUID}/secret","coreMetricsTarget":{"digitalData":{"page":{"pageID":"IBMBluemix","attributes":{"IBM_WTMSite":"BLUEMIX"},"category":{"categoryID":"IBMBluemix Website"}}}},"orgDeletionAllowed":false,"nodeRedTemplateId":"node-red-template","eclipseDocAPI":"{BASE}/starters/deploy_eclipsetools.html","cfVersion":"226004","alchemyVMEnabled":true,"alchemyVMProxyEnabled":false,"customizedProductNameHTMLFragment":null,"useSegment":true,"enableAppActivity":true,"planChangeLearnMoreURL":"/acctmgmt/bill_usage.html#plan_change","whiskEnabled":false,"freeCertificateUploadsTrial":1,"scwAPIURL":"https://www.ibm.com/marketplace/cloud/SCWAPIJSView?jslib=dojo19","OpenCloudServices":["mongodb","mysql","postgresql","rabbitmq","redis"],"alchemyCFLabsUrl":"https://developer.ibm.com/bluemix/docs/category/cloud-foundry-docs/","enableUseService":true,"ccSystemDownUntil":null,"scwPartNumber":"D15V7LL","trialMemory":2,"uploadAppDocsURL":"/#starters/upload_app.html","hybridStarterUrl":"/#starters/mobile/hybrid/hybrid.html","isOnboardWizardEnabled":false,"workWithDataUrl":"/data/services","systemNotificationsURL":"https://bluemix-notification.{DOMAIN}/api/notifications","alchemyContainerDashboardBaseUrl":"https://containers.ng.bluemix.net/v2/containers","alchemyContainersLearnMoreURL":"/containers/container_index.html","proxyEnabled":true,"debugClientPerformance":false,"dedicatedServiceDeskEmail":"","alchemyVMLearnMoreURL":"/virtualmachines/vm_index.html","debugClientAppBringup":false,"registrationAllowed":false,"androidStarterUrl":"/#starters/mobile/android/android.html","serviceTermsUrl":null,"runtimeTotalFreeQuota":1125,"compositeAllowed":false,"enableVMPricing":false,"detect3rdCookieUrl":"https://detect3rdparty.mybluemix.net/iframechild.html","buildPackURL":"https://github.com/cloudfoundry-community/cf-docs-contrib/wiki/Buildpacks","mobileStarterUrl":"/starters/mobile.html","contactNumbers":["code:JPN,phoneTollFree:0120-550-210,email:https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=raq&S_TACT=109HH02W&lang=ja_JP","code:AUT,phoneTollFree:0800-070-61-08,email:bluemix@ie.ibm.com","code:DNK,phoneTollFree:80-251-449,email:bluemix@ie.ibm.com","code:FIN,phoneTollFree:0800-774-151,email:bluemix@ie.ibm.com","code:FRA,phoneTollFree:0805-542-546,email:bluemix@ie.ibm.com","code:DEU,phoneTollFree:0800-724-3588,email:bluemix@ie.ibm.com","code:GRC,phoneTollFree:00-800-325-2048,email:bluemix@ie.ibm.com","code:IRL,phoneTollFree:1-800-923-050,email:bluemix@ie.ibm.com","code:ITA,phoneTollFree:800-902-574,email:bluemix@ie.ibm.com","code:NOR,phoneTollFree:800-57915,email:bluemix@ie.ibm.com","code:PRT,phoneTollFree:0800-784-561,email:bluemix@ie.ibm.com","code:ESP,phoneTollFree:900-8-10789,email:bluemix@ie.ibm.com","code:SWE,phoneTollFree:0201-09-170,email:bluemix@ie.ibm.com","code:CHE,phoneTollFree:0800-16-6974,email:bluemix@ie.ibm.com","code:GBR,phoneTollFree:0800-587-1218,email:bluemix@ie.ibm.com","code:ISR,phoneTollFree:180-938-8145,email:bluemix@ie.ibm.com","code:BEL,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:NLD,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:LUX,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:ALB,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:ARM,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:AZE,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:BLR,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:BIH,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:BGR,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:HRV,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:CZE,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:EST,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:HUN,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:KAZ,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:LVA,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:LTU,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:MKD,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:POL,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:ROU,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:RUS,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:SRB,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:SVK,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:SVN,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:UKR,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:UZB,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:MDA,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:GEO,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com","code:MNE,phoneTollFree:1-844-BLUEMIX,phone:1-267-238-3490,email:bluemix@ie.ibm.com"],"spendingNotificationMin":null,"isBSSChargesEnabled":true,"videoDeskUID_NotLoggedIn":"c52813744cf53dd7cb4d23788327a1a3","manageInfrastructureEnabled":true,"localStorageEnabled":true,"uiSessionTimeout":480,"trialDay":30,"privacyStatementUrl":"http://www.ibm.com/privacy/us/en/?lnk=flg-privusen&cm_mc_uid=05342015103914404251866&cm_mc_sid_50200000=1441921424","loginStyle":"sso","contactEmail":"bluemix@us.ibm.com","isThirdPartyChargesEnabled":true,"spaceDeletionAllowed":true,"dedicatedSupportContactMain":"monitise-support@bluemix.net","contactEmails":null,"DedicatedCloudServices":["Cloudant NoSQL DB","SQL Database","MQ Light","Data Cache","Session Cache"],"trialDataDeletionDays":30,"spaceCreationAllowed":true,"rtmgmtUrl":"https://rtmgmt.{DOMAIN}/rest/ace/v1/apps/{APP_GUID}/uiMetadata","useAccountIUI":true,"mobileTypes":{"MBAAS":{"mainServices":["MAS","MAS_Dev","MAS_Test"],"mobileDataServices":["MobileData","MobileData_Dev","MobileData_Test"],"pushServices":["Push","Push_Dev","Push_Test"],"platforms":["iOS","Android","Hybrid"],"runtimes":["nodejsHelloWorld"],"boilerplate":"mobileBackendStarter"},"MobileFirst":{"mainServices":["AdvancedMobileAccess","AdvancedMobileAccess_Dev","AdvancedMobileAccess_Test"],"cloudantNoSqlServices":["cloudantNoSQLDB","cloudantNoSQLDB_Dev","cloudantNoSQLDB_Test"],"pushServices":["imfpush","imfpush_Dev","imfpush_Test"],"platforms":["iOS"],"runtimes":["nodejsHelloWorld"],"boilerplate":"mobileFirstPlatform","gettingStarted":"&hash=/client/register/new/ios","sample":"&hash=/client/register/sample/ios"}},"regionDocUrl":"/#overview/overview.html#ov_intro__reg","accessibilityURL":"http://www.ibm.com/accessibility","alchemyVMMessageEnabled":true,"docURL":"https://www.ng.bluemix.net/docs","debugClientPushEvents":false,"enableTrialFeatures":true,"sanitizeDefaultFilter":{"elements":["a","b","blockquote","br","caption","cite","code","col","colgroup","dd","dl","dt","em","h1","h2","h3","h4","h5","h6","i","img","li","ol","p","pre","q","small","strike","strong","sub","sup","table","tbody","td","tfoot","th","thead","tr","u","ul"],"attributes":{"a":["href","title"],"blockquote":["cite"],"col":["span","width"],"colgroup":["span","width"],"img":["align","alt","height","src","title","width"],"ol":["start","type"],"q":["cite"],"table":["summary","width"],"td":["abbr","axis","colspan","rowspan","width"],"th":["abbr","axis","colspan","rowspan","scope","width"],"ul":["type"]},"protocols":{"a":{"href":["ftp","http","https","mailto"]},"blockquote":{"cite":["http","https"]},"img":{"src":["http","https"]},"q":{"cite":["http","https"]}}}};window.regions = [{"id":"ibm:yp:au-syd","domain":"au-syd.bluemix.net","name":"au-syd","region":"au-syd","display_name":"Sydney","customer":{"name":"ibm","display_name":"IBM"},"deployment":{"name":"yp","display_name":"Production"},"geo":{"name":"au-syd","display_name":"Sydney"},"public_regions_by_proximity":["ibm:yp:au-syd","ibm:yp:us-south","ibm:yp:eu-gb"],"console_url":"https://console.au-syd.bluemix.net","cf_api":"https://api.au-syd.bluemix.net","mccp_api":"https://mccp.au-syd.bluemix.net","type":"public","home":false,"aliases":[],"settings":{"devops":{"enabled":false}}},{"id":"ibm:yp:us-south","domain":"ng.bluemix.net","name":"us-south","region":"us-south","display_name":"US South","customer":{"name":"ibm","display_name":"IBM"},"deployment":{"name":"yp","display_name":"Production"},"geo":{"name":"us-south","display_name":"US South"},"public_regions_by_proximity":["ibm:yp:us-south","ibm:yp:eu-gb","ibm:yp:au-syd"],"console_url":"https://console.ng.bluemix.net","cf_api":"https://api.ng.bluemix.net","mccp_api":"https://mccp.ng.bluemix.net","type":"public","home":true,"aliases":[],"settings":{"devops":{"enabled":false}}},{"id":"ibm:yp:eu-gb","domain":"eu-gb.bluemix.net","name":"eu-gb","region":"eu-gb","display_name":"United Kingdom","customer":{"name":"ibm","display_name":"IBM"},"deployment":{"name":"yp","display_name":"Production"},"geo":{"name":"eu-gb","display_name":"United Kingdom"},"public_regions_by_proximity":["ibm:yp:eu-gb","ibm:yp:us-south","ibm:yp:au-syd"],"console_url":"https://console.eu-gb.bluemix.net","cf_api":"https://api.eu-gb.bluemix.net","mccp_api":"https://mccp.eu-gb.bluemix.net","type":"public","home":false,"aliases":[],"settings":{"devops":{"enabled":false}}}];window.currentRegion = {"id":"ibm:yp:us-south","domain":"ng.bluemix.net","name":"us-south","region":"us-south","display_name":"US South","customer":{"name":"ibm","display_name":"IBM"},"deployment":{"name":"yp","display_name":"Production"},"geo":{"name":"us-south","display_name":"US South"},"public_regions_by_proximity":["ibm:yp:us-south","ibm:yp:eu-gb","ibm:yp:au-syd"],"console_url":"https://console.ng.bluemix.net","cf_api":"https://api.ng.bluemix.net","mccp_api":"https://mccp.ng.bluemix.net","type":"public","home":true,"aliases":[],"settings":{"devops":{"enabled":false}}};window.authorizationInfo = ["UAA","IBMID","BLUEID","SSOV2"];window.connectionInfo = {"userEmail":"aliberat@us.ibm.com","scope":["cloud_controller.read","password.write","cloud_controller.write","openid"],"token":"Bearer NO.TOKEN_FOR.UI","userGuid":"1419d1a3-4ccb-4602-a2c6-79eeedbc72d0","csrftoken":"sOkNf7Rr-yS_ZqlejjA-zeoUT92tdewOa9Cs"};window.cfInfo = {"name":"Bluemix","build":"226004","support":"http://ibm.biz/bluemix-supportinfo","version":2,"description":"IBM Bluemix","authorization_endpoint":"https://login.ng.bluemix.net/UAALoginServerWAR","token_endpoint":"https://uaa.ng.bluemix.net","min_cli_version":null,"min_recommended_cli_version":null,"api_version":"2.44.0","app_ssh_endpoint":"ssh.ng.bluemix.net:2222","app_ssh_host_key_fingerprint":null,"app_ssh_oauth_client":"ssh-proxy","routing_endpoint":"https://api.ng.bluemix.net/routing","logging_endpoint":"wss://loggregator.ng.bluemix.net:443","doppler_logging_endpoint":"wss://doppler.ng.bluemix.net:4443","user":"1419d1a3-4ccb-4602-a2c6-79eeedbc72d0","console_endpoint":"https://mccp.ng.bluemix.net/console","region":"us-south"};window.isDedicatedAdmin = true;</script><script type="text/javascript">var q = [];require(["cloudOE/main", 'cloudOE/socket.io', 'dojo/request/script' ], function (main, io, script) {window.io = io;script.get("//ace-common-production-20160602-164011.ng.bluemix.net/cache/c46-2528592792/build/socket-event-channel.min.js", "{}").then(function() {_init_header();_init_support_widget();});});</script><iframe src="./Dashboard - IBM Bluemix_files/ect.html" id="db_ect" height="0" width="0" style="display: none;"></iframe><img style="display:none" alt="Demandbase pixel" id="db_pixel_ad" src="./Dashboard - IBM Bluemix_files/pixel"><img style="display:none" alt="Demandbase pixel" id="db_pixel_rt" src="./Dashboard - IBM Bluemix_files/pixel(1)"><iframe src="./Dashboard - IBM Bluemix_files/ect(1).html" id="db_ect" height="0" width="0" style="display: none;"></iframe><script src="./Dashboard - IBM Bluemix_files/saved_resource(1)" type="text/javascript"></script><iframe style="display: none;" src="./Dashboard - IBM Bluemix_files/saved_resource.html"></iframe><img src="./Dashboard - IBM Bluemix_files/l" width="1" height="1" border="0" alt="" style="display: none;"><div class="dijitTooltip dijitTooltipBelow" id="dijit__MasterTooltip_0" widgetid="dijit__MasterTooltip_0"><div class="dijitTooltipConnector" data-dojo-attach-point="connectorNode" style="left: 95.5156px;"></div><div class="dijitTooltipContainer dijitTooltipContents" data-dojo-attach-point="containerNode" role="alert" align="left"></div><iframe src="javascript:&quot;&quot;" class="dijitBackgroundIframe" role="presentation" tabindex="-1" style="opacity: 0.1; width: 100%; height: 100%;" src="./Dashboard - IBM Bluemix_files/saved_resource(2).html"></iframe></div><div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 1px; height: 1px; z-index: 999999999;"><object id="global-zeroclipboard-flash-bridge" name="global-zeroclipboard-flash-bridge" width="100%" height="100%" type="application/x-shockwave-flash" data="./Dashboard - IBM Bluemix_files/ZeroClipboard.swf"><param name="allowScriptAccess" value="sameDomain"><param name="allowNetworking" value="all"><param name="menu" value="false"><param name="wmode" value="transparent"><param name="flashvars" value="trustedOrigins=console.ng.bluemix.net%2C%2F%2Fconsole.ng.bluemix.net%2Chttps%3A%2F%2Fconsole.ng.bluemix.net&amp;swfObjectId=global-zeroclipboard-flash-bridge"></object></div><div class="notifyjs-corner" style="top: 0px; right: 0px;"></div><div class="dijitDialog cloudOESimpleDialog bluemixDialog hasTitle titleAutoWidth cloudOEEditArtifactNameDialog" role="dialog" aria-labelledby="dijit_Dialog_0_title" id="dijit_Dialog_0" widgetid="dijit_Dialog_0" style="position: absolute; opacity: 0; left: 376px; top: 669px; z-index: 950; display: none;">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle cloudOETextWithEllipsis" id="dijit_Dialog_0_title" role="heading" level="1">Edit Service Name</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Close" role="button" tabindex="0">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Close">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent" style="width: auto; height: auto;"><div class="cloudOEEditArtifactDialogContentArea" data-dojo-attach-point="focusNode" id="dijit__WidgetsInTemplateMixin_44" widgetid="dijit__WidgetsInTemplateMixin_44">
+<form data-dojo-attach-point="containerNode" data-dojo-attach-event="onreset:_onReset,onsubmit:_onSubmit" id="dijit_form_Form_1" enctype="multipart/form-data" action="https://console.ng.bluemix.net/?direct=classic/" method="" widgetid="dijit_form_Form_1">
+	<div class="cloudOEEditArtifactDialogContentAreaContentDiv cloudOESimpleDialogContentAreaContentDiv">
+	   <table class="cloudOELayoutTable">
+	       <tbody>
+		       <tr>
+		           <td>
+		               <label data-dojo-attach-point="textLabel" for="cloudOEEditArtifactDialogContentAreaEditArtifactInputArea" class="cloudOEEditArtifactDialogContentAreaTextLabel cloudOESimpleDialogContentAreaTextLabel">Service Name:</label>
+	               </td>
+		           <td>
+		               <div class="dijit dijitReset dijitInline dijitLeft dijitTextBox dijitValidationTextBox" id="widget_dijit_form_ValidationTextBox_0" role="presentation" widgetid="dijit_form_ValidationTextBox_0"><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><div class="dijitReset dijitInputField dijitInputContainer"><input class="dijitReset dijitInputInner" data-dojo-attach-point="textbox,focusNode" autocomplete="off" type="text" tabindex="0" id="dijit_form_ValidationTextBox_0" aria-required="true" value="" aria-invalid="false"></div></div>
+	               </td>
+		       </tr>
+	       </tbody>
+	   </table>
+		
+ 	</div>
+	<div class="dijitDialogPaneActionBar">
+		<span class="dijit dijitReset dijitInline dijitButton" role="presentation" widgetid="dijit_form_Button_0"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="dijit_form_Button_0_label" tabindex="0" id="dijit_form_Button_0" disabled="true" aria-disabled="false" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="dijit_form_Button_0_label" data-dojo-attach-point="containerNode">Save</span></span></span><input type="submit" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span>
+		<span class="dijit dijitReset dijitInline dijitButton dialog-btn-secondary" role="presentation" widgetid="dijit_form_Button_1"><span class="dijitReset dijitInline dijitButtonNode" data-dojo-attach-event="ondijitclick:__onClick" role="presentation"><span class="dijitReset dijitStretch dijitButtonContents" data-dojo-attach-point="titleNode,focusNode" role="button" aria-labelledby="dijit_form_Button_1_label" tabindex="0" id="dijit_form_Button_1" style="-webkit-user-select: none;"><span class="dijitReset dijitInline dijitIcon dijitNoIcon" data-dojo-attach-point="iconNode"></span><span class="dijitReset dijitToggleButtonIconChar">●</span><span class="dijitReset dijitInline dijitButtonText" id="dijit_form_Button_1_label" data-dojo-attach-point="containerNode">Cancel</span></span></span><input type="button" value="" class="dijitOffScreen" data-dojo-attach-event="onclick:_onClick" tabindex="-1" role="presentation" data-dojo-attach-point="valueNode"></span>
+	</div>
+</form>
+</div></div>
+</div><div class="dijitDialogUnderlayWrapper" id="dijit_DialogUnderlay_0" widgetid="dijit_DialogUnderlay_0" style="z-index: 949; display: none; top: 443px; left: 0px;"><div class="dijitDialogUnderlay _underlay" tabindex="-1" data-dojo-attach-point="node" id="dijit_Dialog_0_underlay" style="width: 1242px; height: 638px;"></div><iframe src="javascript:&quot;&quot;" class="dijitBackgroundIframe" role="presentation" tabindex="-1" style="opacity: 0.1; width: 100%; height: 100%; display: none;" src="./Dashboard - IBM Bluemix_files/saved_resource(3).html"></iframe></div><div id="dojox_widget_Standby_20" widgetid="dojox_widget_Standby_20"><div style="display: block; opacity: 0.424567; z-index: 6; position: absolute; cursor: wait; width: 922px; height: 40px; top: 497px; left: 300px; border-radius: 0px;" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.471741; display: block; z-index: 7; position: absolute; top: 506.5px; left: 751px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinnerLarge"></span></div></div><div id="dojox_widget_Standby_21" widgetid="dojox_widget_Standby_21"><div style="display: none; opacity: 0.410467; z-index: 6; position: absolute; cursor: wait; background-color: rgb(57, 75, 84);" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.456074; display: none; z-index: 7; position: absolute; top: 0px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinner"></span></div></div><div id="dojox_widget_Standby_22" widgetid="dojox_widget_Standby_22"><div style="display: none; opacity: 0.404837; z-index: 6; position: absolute; cursor: wait; background-color: rgb(57, 75, 84);" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.446694; display: none; z-index: 7; position: absolute; top: 0px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinner"></span></div></div><div id="dojox_widget_Standby_23" widgetid="dojox_widget_Standby_23"><div style="display: none; opacity: 0.396406; z-index: 6; position: absolute; cursor: wait; background-color: rgb(57, 75, 84);" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.440451; display: none; z-index: 7; position: absolute; top: 0px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinner"></span></div></div><div id="dojox_widget_Standby_24" widgetid="dojox_widget_Standby_24"><div style="display: none; opacity: 0.387994; z-index: 6; position: absolute; cursor: wait; background-color: rgb(57, 75, 84);" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.431105; display: none; z-index: 7; position: absolute; top: 0px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinner"></span></div></div><div id="dojox_widget_Standby_25" widgetid="dojox_widget_Standby_25"><div style="display: block; opacity: 0.542638; z-index: 76; position: absolute; cursor: wait; width: 280px; height: 537px; top: 101px; left: 0px; border-radius: 0px; background-color: rgb(26, 37, 45);" dojoattachpoint="_underlayNode"></div><img src="https://ace-dashboard-production-20160602-164011.ng.bluemix.net/dashboard/build/lib/dojox/widget/Standby/images/loading.gif" style="opacity: 0; display: none; z-index: -10000; position: absolute; top: 0px; left: 0px; cursor:wait;" dojoattachpoint="_imageNode" alt="Please Wait..."><div style="opacity: 0.602931; display: block; z-index: 77; position: absolute; top: 360px; left: 132px;" dojoattachpoint="_textNode"><span class="cloudOELoadingSpinner"></span></div></div></body></html>

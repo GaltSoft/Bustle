@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode8.3
+
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+
+script:
+- xcodebuild build -sdk iphonesimulator -scheme TodoList-iOS | xcpretty -c && exit ${PIPESTATUS[0]}
+
