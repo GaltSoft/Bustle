@@ -17,11 +17,11 @@
 import Foundation
 import XCTest
 
-@testable import TodoList
+@testable import BustleServices
 
-class TestTodoList: XCTestCase {
+class TestBustleServices: XCTestCase {
 
-    static var allTests: [(String, (TestTodoList) -> () throws -> Void )] {
+    static var allTests: [(String, (TestBustleServices) -> () throws -> Void )] {
         return [
             ("testAddItem", testAddItem),
             ("testRemoveItem", testRemoveItem),

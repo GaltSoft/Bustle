@@ -41,7 +41,7 @@ enum Result<T> {
 /// TodoList for CouchDB
 public class TodoList: TodoListAPI {
     
-    static let defaultCouchHost = "127.0.0.1"
+    static let defaultCouchHost = "localhost"
     static let defaultCouchPort = UInt16(5984)
     static let defaultDatabaseName = "todolist"
     

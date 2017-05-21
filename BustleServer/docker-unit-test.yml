@@ -1,0 +1,16 @@
+db:
+  image: couchdb
+  ports:
+    - "5984:5984"
+
+app:
+  image: ibmcom/swift-ubuntu
+  ports:
+    - "8090:8090"
+  volumes:
+    - .:/root/BustleServer
+  environment:
+      - PORT=8090
+  command: bash -c "cd /root/BustleServer && swift package clean && swift build && swift test"
+  links:
+    - db:localhost

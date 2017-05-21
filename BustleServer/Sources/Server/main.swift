@@ -56,6 +56,6 @@ let controller = TodoListController(backend: todos)
 let port = manager.port
 Log.verbose("Assigned port is \(port)")
 
-CloudFoundryDeploymentTracker(repositoryURL: "https://github.com/IBM-Swift/TodoList-CouchDB.git").track()
+// CloudFoundryDeploymentTracker(repositoryURL: "https://github.com/IBM-Swift/TodoList-CouchDB.git").track()
 Kitura.addHTTPServer(onPort: port, with: controller.router)
 Kitura.run()

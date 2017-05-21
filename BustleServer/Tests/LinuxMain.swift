@@ -16,8 +16,8 @@
 
 import XCTest
 
-@testable import TodoListTests
+@testable import BustleServicesTests
 
 XCTMain([
-         testCase(TestTodoList.allTests)
+         testCase(TestBustleServices.allTests)
          ])
