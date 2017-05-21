@@ -1,0 +1,25 @@
+os: linux
+dist: trusty
+sudo: required
+services:
+  - postgresql
+
+before_install:
+  - wget https://swift.org/builds/swift-3.1-release/ubuntu1404/swift-3.1-RELEASE/swift-3.1-RELEASE-ubuntu14.04.tar.gz
+  - tar xzvf swift-3.1-RELEASE-ubuntu14.04.tar.gz
+  - export PATH=swift-3.1-RELEASE-ubuntu14.04/usr/bin:$PATH
+  - sudo apt-get -y install clang-3.8 lldb-3.8 libmysqlclient-dev
+  - psql --help
+  - psql -c 'alter user travis createdb' -U postgres
+  - createdb travis -U postgres
+  - psql -c "create user todolist" -U postgres
+  - createdb todolist -U postgres
+  - psql -c 'grant postgres to travis' -U postgres
+  - psql -c 'grant postgres to todolist' -U postgres
+  - psql -c '\c todolist' -U todolist
+  - psql -c 'create table todos(tid SERIAL PRIMARY KEY, user_id TEXT NOT NULL, title TEXT NOT NULL, completed boolean NOT NULL, ordering INTEGER NOT NULL);' -U todolist
+  - psql -c 'grant all privileges on todos to public' -U todolist
+
+script:
+  - swift build -Xcc -I/usr/include/postgresql 
+  - swift test -Xcc -I/usr/include/postgresql

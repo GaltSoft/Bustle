@@ -1,0 +1,12 @@
+declared-services:
+  TodoList-postgresql:
+    label: compose-for-postgresql
+    plan: Standard
+applications:
+- name: TodoListPostgresqlApp
+  memory: 256M
+  instances: 1
+  random-route: true
+  command: Server
+  services:
+  - TodoList-postgresql
