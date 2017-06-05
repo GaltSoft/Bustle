@@ -1,13 +1,9 @@
-declared-services:
-  TodoListCloudantDatabase:
-    label: cloudantNoSQLDB
-    plan: Lite
 applications:
-- name: BlusterCloudantApp
+- name: bustle-server
   memory: 256M
   instances: 1
   random-route: true
   command: Server
   services:
-  - BlusterCloudantDatabase
+  - bustle-db
 
