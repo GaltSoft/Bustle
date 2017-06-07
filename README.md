@@ -5,10 +5,13 @@ Open Source Project to explore Server Side Swift and other emerging Swift Techno
 
 It implements the classic ToDo app that is in a large variety of demos
 
+Presentation slide deck can be found in the Documentation directory
+
 ## Technology Stack
 
-Swift
-Kitura
+* Swift
+* Kitura
+* Docker
 
 ## How ?
 
